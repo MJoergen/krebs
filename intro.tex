@@ -24,15 +24,18 @@ Organic compounds are named after certain ``functional groups'' in the atomic st
 
 An alkane consists of carbon and hydrogen only, and with only single carbon-carbon bond.
 They have the general chemical formula $C_{n}H_{2n+2}$. They are {\em saturated\/}
-due to the lack of double bonds, and hence less reactive.
+due to the lack of double bonds (and hence less reactive?).
 
-Examples of alkanes are methane ($CH_4$) and ethane ($C_2H_6$).  Methane is produced by
-methanogenic bacteria.
+Examples of alkanes are methane ($CH_4$), ethane ($C_2H_6$), and octane ($C_{8}H_{18}$).
+Methane is produced by methanogenic bacteria.
 
 \subsection{Alkene}
 
 An alkene consists of carbon and hydrogen only, and with one carbon-carbon double bond.
-They have the general chemical formula $C_{n}H_{2n}$.
+They have the general chemical formula $C_{n}H_{2n}$. The double bond is stronger than
+a single bond, but not twice as strong.
+
+Alkenes react in many addition reactions, which occur by opening up the double-bond.
 
 Examples of alkanes are ethylene ($C_2H_4$) and propylene ($C_3H_6$).
 
@@ -49,17 +52,67 @@ solution only a tiny fraction of glucose exists as the aldehyde.
 \subsection{carboxylic acid}
 \chemfig{R-C (=[1]O) (-[7]OH)}
 
+Carboxylic acids are polar. Because they are both hydrogen-bond acceptors (the {\em
+carbonyl\/} $–C=O$) and hydrogen-bond donors (the {\em hydroxyl\/} $–OH$), they also
+participate in hydrogen bonding. Together, the hydroxyl and carbonyl group form the
+functional group {\em carboxyl}.
+
+Most carboxylic acids can be reduced to alcohols by hydrogenation.
+
+Examples are formic acid (formate) and acetic acid (acetate).
+
 \subsection{ester}
 \chemfig{R-C (=[1]O) (-[7]OR')}
 
 \subsection{ketone}
 \chemfig{R-C (=[1]O) (-[7]R')}
 
+\subsection{carbohydrate}
+A carbohydrate is a biomolecule consisting of carbon (C), hydrogen (H) and oxygen (O)
+atoms, usually with a hydrogen–oxygen atom ratio of 2:1 (as in water) and thus with the
+empirical formula $C_m{(H_2O)}_n$ (where m may or may not be different from n), which does
+not mean the H has covalent bonds with O (for example with $CH_2O$, H has a covalent bond
+with C but not with O). However, not all carbohydrates conform to this precise
+stoichiometric definition (e.g., uronic acids, deoxy-sugars such as fucose), nor are all
+chemicals that do conform to this definition automatically classified as carbohydrates
+(e.g.\ formaldehyde and acetic acid).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{The players}\label{sec_players}
 
+\subsection{Aldehydes}
+
+\subsubsection{Formaldehyde}
+\chemfig{H-C (=[1]O) (-[7]H)}
+
+\begin{itemize}
+\item Chemical formula $CH_2O$.
+\item Standard enthalpy of formation: -108.7 kJ/mol.
+\end{itemize}
+
+\subsubsection{Acetaldehyde}
+\chemfig{H-C (-[2]H) (-[6]H) -C (=[1]O) (-[7]H)}
+
+\begin{itemize}
+\item Chemical formula $C_2H_4O$.
+\item Standard enthalpy of formation: -192.2 kJ/mol.
+\end{itemize}
+
 \subsection{Carboxylic acids}
+
+In the following, the carboxylate anions are given, a result of deprotonation.
+
+\subsubsection{Formate}
+\chemfig{H-C (=[1]O)-[7]{O^-}}
+\begin{itemize}
+\item Chemical formula $CHO_2^-$.
+\item Standard enthalpy of formation (of formic acid): -425.0 kJ/mol.
+\end{itemize}
+The two oxygen atoms are equivalent and bear a partial negative charge. The remaining C-H
+bond is not acidic.
+
+\subsubsection{Formate}
 \[
 C_2H_4O_2
 \]
@@ -74,6 +127,8 @@ bla bla
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Notes}\label{sec_notes}
+
+We need something about ``Standard enthalpy of formation''.
 
 Writing chemical formulae with chemfig is straightforward.
 
