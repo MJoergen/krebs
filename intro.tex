@@ -3,23 +3,83 @@
 \usepackage{hyperref}
 \begin{document}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+
+This document is about the bio-chemical processes happening in cells during metabolism and
+respiration. The main entity in this process is the Krebs cycle.
+
+The organisation is as follows: In section~(\ref{sec_prerequisites}) we begin by
+establishing some facts from organic chemistry. Then in section~(\ref{sec_players})
+we list the main characters taking place in this chemical dance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Prerequisites}\label{sec_prerequisites}
+
+Organic compounds are named after certain ``functional groups'' in the atomic structure.
+
+\subsection{Alkane}
+
+An alkane consists of carbon and hydrogen only, and with only single carbon-carbon bond.
+They have the general chemical formula $C_{n}H_{2n+2}$. They are {\em saturated\/}
+due to the lack of double bonds, and hence less reactive.
+
+Examples of alkanes are methane ($CH_4$) and ethane ($C_2H_6$).  Methane is produced by
+methanogenic bacteria.
+
+\subsection{Alkene}
+
+An alkene consists of carbon and hydrogen only, and with one carbon-carbon double bond.
+They have the general chemical formula $C_{n}H_{2n}$.
+
+Examples of alkanes are ethylene ($C_2H_4$) and propylene ($C_3H_6$).
+
+\subsection{Aldehyde}
+
+\chemfig{R-C (=[1]O) (-[7]H)}
+
+The functional group (O=C---H) is called {\em aldehyde group\/} but also sometimes {\em
+formyl group}.
+
+Examples of aldehydes are: formaldehyde, acetaldehyde, glucose. However, in aqueous
+solution only a tiny fraction of glucose exists as the aldehyde.
+
+\subsection{carboxylic acid}
+\chemfig{R-C (=[1]O) (-[7]OH)}
+
+\subsection{ester}
+\chemfig{R-C (=[1]O) (-[7]OR')}
+
+\subsection{ketone}
+\chemfig{R-C (=[1]O) (-[7]R')}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The players}\label{sec_players}
+
+\subsection{Carboxylic acids}
+\[
+C_2H_4O_2
+\]
+\chemfig{H-C (-[2]H) (-[6]H)-C (=[1]O)-[7]{O^-}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Reactions}\label{sec_reactions}
+
+bla bla
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Notes}\label{sec_notes}
+
 Writing chemical formulae with chemfig is straightforward.
 
 This is based on \href{https://www.overleaf.com/learn/latex/Chemistry_formulae}{chemfig}.
 
 Wikipedia links:
 \href{https://en.wikipedia.org/wiki/Biological_carbon_fixation}{Biological carbon fixation}.
-
-
-
-\section{Carboxylic acids}
-\subsection{Carboxylic acids}
-$$
-C_2H_4O_2
-$$
-\chemfig{H-C(-[2]H)(-[6]H)-C(=[1]O)-[7]{O^-}}
 \end{document}
 
