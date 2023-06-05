@@ -2,3 +2,5 @@
 *.log
 *.out
 *.pdf
+/intro.fdb_latexmk
+/intro.fls
