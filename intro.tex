@@ -10,12 +10,78 @@
 This document is about the bio-chemical processes happening in cells during metabolism and
 respiration. The main entity in this process is the Krebs cycle.
 
+The reverse Krebs cycle is a sequence of chemical reactions that are used by some bacteria
+to produce carbon compounds from carbon dioxide and water by the use of energy-rich
+reducing agents as electron donors.  Where the Krebs cycle takes carbohydrates and
+oxidizes them to CO2 and water, the reverse cycle takes $CO_2$ and $H_2O$ to make carbon
+compounds. This process is used by some bacteria (such as Aquificota) to synthesize carbon
+compounds, sometimes using hydrogen, sulfide, or thiosulfate as
+\href{https://en.wikipedia.org/wiki/Electron_donor}{electron donors} \footnote{An
+electron donor is a chemical entity that donates electrons to another compound. It is a
+\href{https://en.wikipedia.org/wiki/Reducing_agent}{reducing agent} that, by virtue of
+its donating electrons, is itself oxidized in the
+process. The electron donating power of a donor molecule is measured by its ionization
+potential which is the energy required to remove an electron from the highest occupied
+molecular orbital (HOMO). The driving forces for electron donor and acceptor behavior in
+chemistry is based on the concepts of electropositivity (for donors) and electronegativity
+(for acceptors) of atomic or molecular entities.}.
+
+There are three enzymes specific to the reductive Krebs cycle: citrate lyase,
+fumarate reductase, and α-ketoglutarate synthase.
+
+The splitting of citric acid to oxaloacetate and acetate is catalyzed by citrate lyase,
+rather than the reverse reaction of citrate synthase. Succinate dehydrogenase is
+replaced by fumarate reductase and α-ketoglutarate synthase replaces α-ketoglutarate
+dehydrogenase.
+
+The conversion of succinate to 2-oxoglutarate is also different. In the oxidative reaction
+this step is coupled to the reduction of NADH. However, the oxidation of 2-oxoglutarate to
+succinate is so energetically favorable, that NADH lacks the reductive power to drive the
+reverse reaction. In the reverse Krebs cycle, this reaction has to use a reduced low potential
+\href{https://en.wikipedia.org/wiki/Ferredoxin}{ferredoxin}.
+
 The organisation is as follows: In section~(\ref{sec_prerequisites}) we begin by
 establishing some facts from organic chemistry. Then in section~(\ref{sec_players})
 we list the main characters taking place in this chemical dance.
 
+\subsection{Redox reaction}
+In their pre-reaction states, reducers (i.e. {\em electron donors}) have extra electrons
+(that is, they are by themselves reduced) and oxidizers (i.e. {\em electron acceptors})
+lack electrons (that is, they are by themselves oxidized). This is commonly expressed in
+terms of their oxidation states. An agent's oxidation state describes its degree of loss
+of electrons, where the higher the oxidation state then the fewer electrons it has. So
+initially, prior to the reaction, a reducing agent is typically in one of its lower
+possible oxidation states; its oxidation state increases during the reaction while that of
+the oxidizer decreases. Thus in a redox reaction, the agent whose oxidation state
+increases, that "loses/donates electrons", that "is oxidized", and that "reduces" is
+called the reducer or reducing agent, while the agent whose oxidation state decreases,
+that "gains/accepts/receives electrons", that "is reduced", and that "oxidizes" is called
+the oxidizer or oxidizing agent.
+
+For example, consider the overall reaction for aerobic cellular respiration:
+\[
+    C_6H_{12}O_6(s) + 6O_2(g) \rightarrow 6CO_2(g) + 6H_2O(l)
+\]
+The oxygen ($O_2$) is being reduced, so it is the oxidizing agent. The glucose
+($C_6H_{12}O_6$) is being oxidized, so it is the reducing agent.
+
+\subsection{Electron donor = reducing agent}
+
+Strong reducing agents easily lose (or donate) electrons. An atom with a relatively large
+atomic radius tends to be a better reductant. In such species, the distance from the
+nucleus to the valence electrons is so long that these electrons are not strongly
+attracted. These elements tend to be strong reducing agents. Good reducing agents tend to
+consist of atoms with a low electronegativity, which is the ability of an atom or molecule
+to attract bonding electrons, and species with relatively small ionization energies serve
+as good reducing agents too.
+
+The measure of a material's ability to reduce is known as its
+\href{https://en.wikipedia.org/wiki/Reduction_potential} reduction potential.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\pagebreak
 \section{Prerequisites}\label{sec_prerequisites}
 
 Organic compounds are named after certain ``functional groups'' in the atomic structure.
@@ -79,6 +145,7 @@ chemicals that do conform to this definition automatically classified as carbohy
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\pagebreak
 \section{The players}\label{sec_players}
 
 \subsection{Aldehydes}
@@ -204,6 +271,38 @@ bond is not acidic.
     \item Standard enthalpy of formation:
 \end{itemize}
 
+
+\subsubsection{Ascorbate}
+\begin{itemize}
+    \item Chemical formula $C_6H_8O_6$.
+\end{itemize}
+The ascorbate ion is the predominant species at typical biological pH values. It is a mild
+reducing agent and antioxidant. It is oxidized with loss of one electron to form a radical
+cation and then with loss of a second electron to form dehydroascorbic acid. It typically
+reacts with oxidants of the reactive oxygen species, such as the hydroxyl radical.
+
+Ascorbic acid is special because it can transfer a single electron, owing to the
+resonance-stabilized nature of its own radical ion, called semidehydroascorbate. The net
+reaction is:
+
+\[
+    RO + C_6H_7O_6^- \rightarrow RO^− + C_6H_7O_6 \rightarrow ROH + C_6H_6O_6
+\]
+
+On exposure to oxygen, ascorbic acid will undergo further oxidative decomposition to
+various products including diketogulonic acid, xylonic acid, threonic acid and oxalic
+acid.
+
+Reactive oxygen species are damaging to animals and plants at the molecular level due to
+their possible interaction with nucleic acids, proteins, and lipids. Sometimes these
+radicals initiate chain reactions. Ascorbate can terminate these chain radical reactions
+by electron transfer. The oxidized forms of ascorbate are relatively unreactive and do not
+cause cellular damage.
+
+However, being a good electron donor, excess ascorbate in the presence of free metal ions
+can not only promote but also initiate free radical reactions, thus making it a
+potentially dangerous pro-oxidative compound in certain metabolic contexts.
+
 \subsection{Sugars}
 
 \subsubsection{Glyceraldehyde}
@@ -241,6 +340,7 @@ This consists of a combination of dihydroxyacetone and glyceraldehyde.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\pagebreak
 \section{Reactions}\label{sec_reactions}
 
 Energy is released from $ATP$ by the following reaction.
@@ -261,9 +361,17 @@ Carboxylase.
     {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow {ADP}^{3-} + {HPO_4}^{2-} + {C_4H_3O_5}^-
 \]
 
+\subsection{The Wood–Ljungdahl pathway}
+\href{https://en.wikipedia.org/wiki/Wood-Ljungdahl_pathway}{The Wood-Ljungdahl pathway} is
+a set of biochemical reactions used by some bacteria. It is
+also known as the reductive acetyl-coenzyme A (Acetyl-CoA) pathway. This pathway
+enables these organisms to use hydrogen as an electron donor, and carbon dioxide as an
+electron acceptor and as a building block for biosynthesis.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\pagebreak
 \section{Notes}\label{sec_notes}
 
 We need something about ``Standard enthalpy of formation''.
