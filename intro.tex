@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{chemfig}
 \usepackage{hyperref}
+\def\mhyphen{{\hbox{-}}}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -270,7 +271,25 @@ bond is not acidic.
     \item Chemical formula $C_6H_5O_7^{3-}$.
     \item Standard enthalpy of formation:
 \end{itemize}
+This is a tricarboxylic acid, because it has three carboxyl groups.
 
+\subsubsection{Aconitate}
+\chemfig{C (=[3]O) (-[5]{O^-}) -C (-[2]H) (-[6]H) -C (-[6] C (=[5]O) (-[7]{O^-}))
+=C (-[6]H) -C (=[1]O) -[7]{O^-}}
+\begin{itemize}
+    \item Chemical formula $C_6H_3O_6^{3-}$.
+    \item Standard enthalpy of formation:
+\end{itemize}
+This is a tricarboxylic acid, because it has three carboxyl groups.
+
+\subsubsection{Isocitrate}
+\chemfig{C (=[3]O) (-[5]{O^-}) -C (-[2]H) (-[6]H) -C (-[2]H) (-[6] C (=[5]O) (-[7]{O^-}))
+-C (-[2]OH) (-[6]H) -C (=[1]O) -[7]{O^-}}
+\begin{itemize}
+    \item Chemical formula $C_6H_5O_7^{3-}$.
+    \item Standard enthalpy of formation:
+\end{itemize}
+This is a tricarboxylic acid, because it has three carboxyl groups.
 
 \subsubsection{Ascorbate}
 \begin{itemize}
@@ -360,6 +379,79 @@ Carboxylase.
 \[
     {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow {ADP}^{3-} + {HPO_4}^{2-} + {C_4H_3O_5}^-
 \]
+
+\subsubsection{Pyruvate decarboxylation}
+This reaction is catalyzed by the Pyruvate Dehydrogenase (PDH) Complex.
+
+$H{\mhyphen}S{\mhyphen}$ is a thiol group. It is similar to an alcohol group, because $S$ is similar to
+oxygen.
+
+\[
+    C_3H_3O_3^- + H{\mhyphen}S{\mhyphen}CoA + NAD^+ \rightarrow C_2H_3O{\mhyphen}S{\mhyphen}CoA + CO_2 + NADH
+\]
+
+This converts Pyruvate to Acetyl-CoA.
+
+$NAD^+$ is oxidized, $NADH$ is reduced.
+
+\subsubsection{Citrate Synthase}
+\[
+    C_2H_3O-S-CoA + C_4H_2O_5^{2-} + H_2O \rightarrow C_6H_6O_7^{2-} + H{\mhyphen}S{\mhyphen}CoA
+\]
+Acetyl-CoA reacts with Oxaloacetate to generate Citrate.
+
+\subsubsection{Aconitase}
+Water is removed from Citrate to generate Aconitate.
+\[
+    C_6H_6O_7^{2-} \rightarrow C_6H_4O_6^{2-} + H_2O
+\]
+
+Then water is re-added to generate Isocitrate.
+\[
+    C_6H_4O_6^{2-} + H_2O \rightarrow C_6H_6O_7^{2-}
+\]
+
+\subsubsection{Isocitrate Dehydrogenase}
+\[
+    C_6H_6O_7^{2-} + NAD^+ \rightarrow C_5H_4O_5^{2-} + CO_2 + NADH + H^+
+\]
+This converts Isocitrate into alpha-ketoglutarate.
+
+\subsubsection{Alpha-ketoglutarate Dehydrogenase}
+\[
+    C_5H_4O_5^{2-} + H-S-CoA + NAD^+ \rightarrow C_4H_4O_3^{-}-S-CoA + CO_2 + NADH
+\]
+This converts alpha-ketoglutarate into Succinyl-CoA.
+
+\subsubsection{Succinyl-CoA Synthetase}
+\[
+    C_4H_4O_3^{-}-S-CoA + GDP^{3-} + HPO_4^{2-} \leftrightarrow C_4H_4O_4^{2-} + H-S-CoA + GTP^{4-}
+\]
+This converts Succinyl-CoA into Succinate.
+
+\subsubsection{Succinate Dehydrogenase}
+\[
+    C_4H_4O_4^{2-} + FAD \leftrightarrow C_4H_2O_4^{2-} + FADH_2
+\]
+This converts Succinate into Fumarate.
+
+\subsubsection{Fumarase}
+\[
+    C_4H_2O_4^{2-} + H_2O \leftrightarrow C_4H_4O_5^{2-}
+\]
+This converts Fumarate into Malate.
+
+\subsubsection{Malate Dehydrogenas}
+\[
+    C_4H_4O_5^{2-} + NAD^+ \leftrightarrow C_4H_2O_5^{2-} + NADH + H^+
+\]
+This converts Malate into Oxaloacetate.
+
+\subsubsection{Total}
+\[
+    Acetyl-CoA + GDP^{3-} + FAD + 3NAD^+ + HPO_4^{2-} \rightarrow 2CO_2 + GTP^{4-} + FADH_2 + 3NADH
+\]
+
 
 \subsection{Reverse Krebs cycle}
 \href{https://en.wikipedia.org/wiki/Biological_carbon_fixation}{The reverse Krebs cycle},
