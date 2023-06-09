@@ -215,9 +215,9 @@ bond is not acidic.
 \end{itemize}
 
 \subsubsection{Fumarate}
-\chemfig{C (=[3]O) (-[5]HO) -C (-[6]H) =C (-[6]H) -C (=[1]O) -[7]{O^-}}
+\chemfig{C (=[3]O) (-[5]{O^-}) -C (-[6]H) =C (-[6]H) -C (=[1]O) -[7]{O^-}}
 \begin{itemize}
-    \item Chemical formula $C_4H_3O_4^-$.
+    \item Chemical formula $C_4H_2O_4^{2-}$.
     \item Standard enthalpy of formation:
 \end{itemize}
 
@@ -361,6 +361,45 @@ Carboxylase.
     {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow {ADP}^{3-} + {HPO_4}^{2-} + {C_4H_3O_5}^-
 \]
 
+\subsection{Reverse Krebs cycle}
+\href{https://en.wikipedia.org/wiki/Biological_carbon_fixation}{The reverse Krebs cycle},
+lso known as reverse TCA cycle (rTCA) or reductive citric acid
+cycle, is an alternative to the standard Calvin-Benson cycle for carbon fixation. It has
+been found in strict anaerobic or microaerobic bacteria (as Aquificales) and anaerobic
+archea. It was discovered by Evans, Buchanan and Arnon in 1966 working with the
+photosynthetic green sulfur bacterium Chlorobium limicola. In particular, it is one of
+the most used pathways in hydrothermal vents by the Campylobacterota. This feature is
+very important in oceans. Without it, there would be no primary production in aphotic
+environments, which would lead to habitats without life. So this kind of primary
+production is called ``dark primary production''.
+
+The cycle involves the biosynthesis of acetyl-CoA from two molecules of $CO_2$. The key
+steps of the reverse Krebs cycle are:
+
+\begin{itemize}
+
+    \item Oxaloacetate to malate, using NADH + H+\\
+        $Oxaloacetate + NADH / H^+ \rightarrow Malate + NAD^+$
+    \item Fumarate to succinate, catalyzed by an oxidoreductase, Fumarate
+        reductase\\
+        $Fumarate + FADH_2 \leftrightarrow Succinate + FAD$
+    \item Succinate to succinyl-CoA, an ATP dependent step\\
+        $Succinate + ATP + CoA \rightarrow Succinyl-CoA + ADP + Pi$
+    \item Succinyl-CoA to alpha-ketoglutarate, using one molecule of $CO_2$\\
+        $Succinyl-CoA + CO2 + Fd{(red)} \rightarrow alpha-ketoglutarate + Fd{(ox)}$
+    \item Alpha-ketoglutarate to isocitrate, using NADPH + H+ and another molecule of
+        $CO_2$\\
+        $Alpha-ketoglutarate + CO_2 + NAD(P)H/H^+ \rightarrow Isocitrate + NAD{(P)}^+$
+    \item Citrate converted into oxaloacetate and acetyl-CoA, this is an ATP
+        dependent step and the key enzyme is the ATP citrate lyase\\
+        $Citrate + ATP + CoA \rightarrow Oxaloacetate + Acetyl-CoA + ADP + Pi$
+\end{itemize}
+
+This pathway is cyclic due to the regeneration of the oxaloacetate.
+
+The bacteria Gammaproteobacteria and Riftia pachyptila switch from the Calvin-Benson cycle
+to the rTCA cycle in response to concentrations of H2S.
+
 \subsection{The Wood–Ljungdahl pathway}
 \href{https://en.wikipedia.org/wiki/Wood-Ljungdahl_pathway}{The Wood-Ljungdahl pathway} is
 a set of biochemical reactions used by some bacteria. It is
@@ -368,6 +407,139 @@ also known as the reductive acetyl-coenzyme A (Acetyl-CoA) pathway. This pathway
 enables these organisms to use hydrogen as an electron donor, and carbon dioxide as an
 electron acceptor and as a building block for biosynthesis.
 
+\subsection{Anaerobic respiration}
+\href{https://en.wikipedia.org/wiki/Anaerobic_respiration}{Anaerobic respiration} is
+respiration using electron acceptors other than molecular oxygen ($O_2$). Although oxygen
+is not the final electron acceptor, the process still uses a respiratory electron
+transport chain.
+
+In aerobic organisms undergoing respiration, electrons are shuttled to an electron
+transport chain, and the final electron acceptor is oxygen. Molecular oxygen is an
+excellent electron acceptor. Anaerobes instead use less-oxidizing substances such as
+nitrate ($NO_3^-$), fumarate ($C_4H_2O_4^{2-}$), sulfate ($SO_4^{2-}$), or elemental
+sulfur ($S$). These terminal electron acceptors have smaller reduction potentials than
+$O_2$.  Less energy per oxidized molecule is released. Therefore, anaerobic respiration is
+less efficient than aerobic.
+
+\subsection{Methanogenesis}
+\href{https://en.wikipedia.org/wiki/Methanogenesis}{Methanogenesis}
+is the formation of methane coupled to energy conservation by microbes known as
+methanogens. Organisms capable of producing methane for energy conservation have been
+identified only from the domain Archaea, a group phylogenetically distinct from both
+eukaryotes and bacteria, although many live in close association with anaerobic bacteria.
+The production of methane is an important and widespread form of microbial metabolism. In
+anoxic environments, it is the final step in the decomposition of biomass. Methanogenesis
+is responsible for significant amounts of natural gas accumulations, the remainder being
+thermogenic.
+
+Methanogenesis in microbes is a form of anaerobic respiration. Methanogens do not use
+oxygen to respire; in fact, oxygen inhibits the growth of methanogens. The terminal
+electron acceptor in methanogenesis is not oxygen, but carbon. The two best described
+pathways involve the use of acetic acid or inorganic carbon dioxide as terminal electron
+acceptors:
+\[
+    CO_2 + 4 H_2 \rightarrow CH_4 + 2 H_2O
+\]
+\[
+    CH_3COOH \rightarrow CH_4 + CO_2
+\]
+
+Methanogenesis is the final step in the decay of organic matter. During the decay process,
+electron acceptors (such as oxygen, ferric iron, sulfate, and nitrate) become depleted,
+while hydrogen ($H_2$) and carbon dioxide accumulate. Light organics produced by fermentation
+also accumulate. During advanced stages of organic decay, all electron acceptors become
+depleted except carbon dioxide. Carbon dioxide is a product of most catabolic processes,
+so it is not depleted like other potential electron acceptors.
+
+Only methanogenesis and fermentation can occur in the absence of electron acceptors other
+than carbon. Fermentation only allows the breakdown of larger organic compounds, and
+produces small organic compounds. Methanogenesis effectively removes the semi-final
+products of decay: hydrogen, small organics, and carbon dioxide. Without methanogenesis, a
+great deal of carbon (in the form of fermentation products) would accumulate in anaerobic
+environments.
+
+\subsection{Ferredoxin}
+\href{https://en.wikipedia.org/wiki/Ferredoxin}{Ferredoxin}
+are iron–sulfur proteins that mediate electron transfer in a range of metabolic reactions.
+The term ``ferredoxin'' was coined by D.C. Wharton of the DuPont Co.\ and applied to the
+``iron protein'' first purified in 1962 by Mortenson, Valentine, and Carnahan from the
+anaerobic bacterium Clostridium pasteurianum.
+
+Another redox protein, isolated from spinach chloroplasts, was termed ``chloroplast
+ferredoxin''. The chloroplast ferredoxin is involved in both cyclic and non-cyclic
+photophosphorylation reactions of photosynthesis. In non-cyclic photophosphorylation,
+ferredoxin is the last electron acceptor thus reducing the enzyme $NADP^+$ reductase. It
+accepts electrons produced from sunlight-excited chlorophyll and transfers them to the
+enzyme ferredoxin: $NADP^+$ oxidoreductase.
+
+Ferredoxins are small proteins containing iron and sulfur atoms organized as iron–sulfur
+clusters. These biological ``capacitors'' can accept or discharge electrons, with the
+effect of a change in the oxidation state of the iron atoms between +2 and +3. In this
+way, ferredoxin acts as an electron transfer agent in biological redox reactions.
+
+Other bioinorganic electron transport systems include rubredoxins, cytochromes, blue
+copper proteins, and the structurally related Rieske proteins.
+
+Ferredoxins can be classified according to the nature of their iron–sulfur clusters and by
+sequence similarity.
+
+Ferredoxins are one of the most reducing biological electron carriers. They typically have
+a mid point potential of -420 mV. The reduction potential of a substance in the cell
+will differ from its midpoint potential depending on the concentrations of its reduced and
+oxidized forms. For a one electron reaction, the potential changes by around 60 mV for
+each power of ten change in the ratio of the concentration. For example, if the ferredoxin
+pool is around 95\% reduced, the reduction potential will be around -500 mV. In
+comparison, other biological reactions mostly have less reducing potentials: for example
+the primary biosynthetic reductant of the cell, NADPH has a cellular redox potential of
+-370 mV ($E_0$ = -320 mV).
+
+The highly reducing ferredoxins are reduced either by using another strong reducing agent,
+or by using some source of energy to ``boost'' electrons from less reducing sources to the
+ferredoxin.
+
+\subsubsection{Direct reduction}
+Reactions that reduce Fd include the oxidation of aldehydes to acids like the
+glyceraldehyde to glycerate reaction (-580 mV), the carbon monoxide dehydrogenase reaction
+(-520 mV), and the 2-oxoacid:Fd Oxidoreductase reactions (-500 mV) like the
+reaction carried out by pyruvate synthase.
+
+\subsubsection{Membrane potential coupled reduction}
+Ferredoxin can also be reduced by using NADH (-320
+mV) or H 2 (-414 mV), but these processes are coupled to the consumption of the membrane
+potential to power the ``boosting'' of electrons to the higher energy state. The Rnf
+complex is a widespread membrane protein in bacteria that reversibly transfers electrons
+between NADH and ferredoxin while pumping Na+ or H+ ions across the membrane. The
+chemiosmotic potential of the membrane is consumed to power the unfavorable reduction of
+$Fd ox$ by NADH\@. This reaction is an essential source of $Fd_{red}^-$ in many autotrophic
+organisms. If the cell is growing on substrates that provide excess $Fd_{red}^-$, the Rnf
+complex can transfer these electrons to NAD+ and store the resultant energy in the
+membrane potential. The energy converting hydrogenases (Ech) are a family of enzymes
+that reversibly couple the transfer of electrons between $Fd$ and $H_2$ while pumping $H^+$ ions
+across the membrane to balance the energy difference.
+
+\[
+    Fd_{ox}^0 + NADH + Na_{outside}^+ \leftrightarrow Fd_{red}^{2-} + NAD^+ + Na_{inside}^+
+\]
+\[
+    Fd_{ox}^0 + H_2 + H_{outside}^+ \leftrightarrow Fd_{red}^{2-} + H^+ + H_{inside}^+
+\]
+
+\subsubsection{Electron bifurcation}
+The unfavourable reduction of Fd from a less reducing electron donor can be coupled
+simultaneously with the favourable reduction of an oxidising agent through an electron
+bifurcation reaction.[6] An example of the electron bifurcation reaction is the generation
+of Fd− red for nitrogen fixation in certain aerobic diazotrophs. Typically in oxidative
+phosphorylation the transfer of electrons from NADH to Ubiquinone (Q) is coupled to
+charging the proton motive force. In Azotobacter the energy released by transferring one
+electron from NADH to Q is used to simultaneously boost the transfer of one electron from
+NADH to Fd.
+
+\subsubsection{Direct reduction of high potential ferredoxins}
+Some ferredoxins have a sufficiently high redox potential that they can be directly
+reduced by NADPH\@. One such ferredoxin is adrenoxin (-274mV) which takes part in the
+biosynthesis of many mammalian steroids.  The ferredoxin Fd3 in the roots of plants that
+reduces nitrate and sulfite has a midpoint potential of -337mV and is also reduced by
+NADPH\@.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
