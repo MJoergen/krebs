@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{chemfig}
 \usepackage{hyperref}
+\usepackage{amsmath}
 \def\mhyphen{{\hbox{-}}}
 \begin{document}
 
@@ -362,41 +363,39 @@ This consists of a combination of dihydroxyacetone and glyceraldehyde.
 \pagebreak
 \section{Reactions}\label{sec_reactions}
 
-Energy is released from $ATP$ by the following reaction.
+Energy is released from $ATP$ by the following reaction splitting it into $ADP$ and a
+phosphate $PO_3^-$ group.
 \[
-    {ATP}^{4-} + H_2O \rightarrow {ADP}^{3-} + {HPO_4}^{2-} + H^+
+    {ATP}^{4-} + H_2O \leftrightarrow {ADP}^{3-} + {HPO_4}^{2-} + H^+
 \]
-
-Glycolysis:
-\[
-    C_6H_{12}O_6 + 2{NAD}^+ + 2{ADP}^{3-} + 2{HPO_4}^{2-} \rightarrow
-    2{C_3H_3O_3}^- + 2NADH + 2H^+ + 2{ATP}^{4-} + 2H_2O
-\]
+Conversely, the opposite reaction is used to store energy, by adding a phosphate group to
+$ADP$ turning it into $ATP$.
 
 \subsection{The Krebs cycle}
-The following reaction converts pyruvate into oxaloacetate, and is catalyzed by Pyruvate
-Carboxylase.
+The overall result of the Krebs cycle is to split Acetyl-CoA into its constituents, i.e.
+two molecules of $CO_2$ and the $CoA$ complex. In the process it consumes water $H_2O$ and
+releases Hydrogen (protons and electrons). Balancing the reaction we get the following
+simplified reaction:
 \[
-    {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow {ADP}^{3-} + {HPO_4}^{2-} + {C_4H_3O_5}^-
+    C_2H_3O{\mhyphen}SCoA + 3H_2O \rightarrow 2CO_2 + HSCoA + 8H
 \]
-
-\subsubsection{Pyruvate decarboxylation}
-This reaction is catalyzed by the Pyruvate Dehydrogenase (PDH) Complex.
-
-$H{\mhyphen}S{\mhyphen}$ is a thiol group. It is similar to an alcohol group, because $S$ is similar to
+$HS{\mhyphen}$ is a thiol group. It is similar to an alcohol group, because $S$ is similar to
 oxygen.
 
+In practice, the hydrogen atoms are split intro protons and electrons, by the following
+reaction
 \[
-    C_3H_3O_3^- + H{\mhyphen}S{\mhyphen}CoA + NAD^+ \rightarrow C_2H_3O{\mhyphen}S{\mhyphen}CoA + CO_2 + NADH
+    NAD^+ + 2H \rightarrow NADH + H^+
 \]
-
-This converts Pyruvate to Acetyl-CoA.
-
 $NAD^+$ is oxidized, $NADH$ is reduced.
+
+In the following I'll describe each step in the Krebs cycle, and finally give a summary of
+all the parts in the reaction.
 
 \subsubsection{Citrate Synthase}
 \[
-    C_2H_3O-S-CoA + C_4H_2O_5^{2-} + H_2O \rightarrow C_6H_6O_7^{2-} + H{\mhyphen}S{\mhyphen}CoA
+    C_2H_3O{\mhyphen}SCoA + C_4H_2O_5^{2-} + H_2O \rightarrow
+    C_6H_6O_7^{2-} + H{\mhyphen}SCoA
 \]
 Acetyl-CoA reacts with Oxaloacetate to generate Citrate.
 
@@ -419,15 +418,22 @@ This converts Isocitrate into alpha-ketoglutarate.
 
 \subsubsection{Alpha-ketoglutarate Dehydrogenase}
 \[
-    C_5H_4O_5^{2-} + H-S-CoA + NAD^+ \rightarrow C_4H_4O_3^{-}-S-CoA + CO_2 + NADH
+    C_5H_4O_5^{2-} + H{\mhyphen}SCoA + NAD^+ \rightarrow
+    C_4H_4O_3^{-}{\mhyphen}SCoA + CO_2 + NADH
 \]
 This converts alpha-ketoglutarate into Succinyl-CoA.
 
 \subsubsection{Succinyl-CoA Synthetase}
 \[
-    C_4H_4O_3^{-}-S-CoA + GDP^{3-} + HPO_4^{2-} \leftrightarrow C_4H_4O_4^{2-} + H-S-CoA + GTP^{4-}
+    C_4H_4O_3^{-}{\mhyphen}SCoA + GDP^{3-} + HPO_4^{2-} \leftrightarrow
+    C_4H_4O_4^{2-} + H{\mhyphen}SCoA + GTP^{4-}
 \]
 This converts Succinyl-CoA into Succinate.
+
+The remaining steps are to convert the four-carbon molecule Succinate $C_4H_4O_4^{2-}$
+into the four-carbon molecule Oxaloacetate $C_4H_2O_5^{2-}$. These remaining steps
+essentially add a water molecule $H_2O$ to bring in the missing oxygen, and then remove
+the excess hydrogen using $FAD$ and $NAD$.
 
 \subsubsection{Succinate Dehydrogenase}
 \[
@@ -447,15 +453,47 @@ This converts Fumarate into Malate.
 \]
 This converts Malate into Oxaloacetate.
 
+We're finally back where we started, replenishing the Oxaloacetate we used initially.
+Except now the Acetyl-CoA has been broken down into $CO_2$ and Hydrogen.
+
 \subsubsection{Total}
+The total reaction is as follows:
 \[
-    Acetyl-CoA + GDP^{3-} + FAD + 3NAD^+ + HPO_4^{2-} \rightarrow 2CO_2 + GTP^{4-} + FADH_2 + 3NADH
+    \begin{split}
+    C_2H_3O{\mhyphen}SCoA + GDP^{3-}+ HPO_4^{2-} + FAD + 3NAD^+ + 2H_2O \rightarrow \\
+    2CO_2 + HSCoA + GTP^{4-} + FADH_2 + 3NADH + 2H^+
+    \end{split}
+\]
+Note that the $GTP$ contains an extra $PO_3$ group compared to $GDP$.
+
+\subsection{Pyruvate decarboxylation}
+This reaction is catalyzed by the Pyruvate Dehydrogenase (PDH) Complex.
+\[
+    C_3H_3O_3^- + H{\mhyphen}SCoA + NAD^+ \rightarrow
+    C_2H_3O{\mhyphen}SCoA + CO_2 + NADH
 \]
 
+This converts Pyruvate to Acetyl-CoA.
+
+\subsection{Pyruvate Carboxylase}
+The following reaction converts pyruvate into oxaloacetate, and is catalyzed by Pyruvate
+Carboxylase.
+\[
+    {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow
+    {ADP}^{3-} + {HPO_4}^{2-} + {C_4H_3O_5}^-
+\]
+
+\subsection{Glycolysis}
+\[
+    \begin{split}
+    C_6H_{12}O_6 + 2{NAD}^+ + 2{ADP}^{3-} + 2{HPO_4}^{2-} \rightarrow \\
+    2{C_3H_3O_3}^- + 2NADH + 2H^+ + 2{ATP}^{4-} + 2H_2O
+    \end{split}
+\]
 
 \subsection{Reverse Krebs cycle}
 \href{https://en.wikipedia.org/wiki/Biological_carbon_fixation}{The reverse Krebs cycle},
-lso known as reverse TCA cycle (rTCA) or reductive citric acid
+also known as reverse TCA cycle (rTCA) or reductive citric acid
 cycle, is an alternative to the standard Calvin-Benson cycle for carbon fixation. It has
 been found in strict anaerobic or microaerobic bacteria (as Aquificales) and anaerobic
 archea. It was discovered by Evans, Buchanan and Arnon in 1966 working with the
