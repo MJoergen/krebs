@@ -371,6 +371,25 @@ phosphate $PO_3^-$ group.
 Conversely, the opposite reaction is used to store energy, by adding a phosphate group to
 $ADP$ turning it into $ATP$.
 
+\subsection{Pyruvate decarboxylation}
+Pyruvate produced by glycolysis still contains a lot of reducing power (check each of its
+carbon atoms' oxidation state and compare it with carbon's oxidation state in $CO_2$). This
+reducing power will be harnessed by the cell through the citric acid cycle. First,
+pyruvate is decarboxylated to acetyl-CoA, an activated form of acetate ($CH_3COO^-$)
+
+\[
+    C_3H_3O_3^- + H{\mhyphen}SCoA + NAD^+ \rightarrow
+    C_2H_3O{\mhyphen}SCoA + CO_2 + NADH
+\]
+
+This reaction is catalyzed by Pyruvate Dehydrogenase, a very complex enzyme with several
+cofactors: lipoamide, FAD, coenzyme A. Thioester bond ($S{\mhyphen}C=O$) hydrolysis is very exergonic,
+and therfore its formation demands energy. That energy comes from pyruvate decarboxylation
+(pyruvate contains three carbon atoms, and the acetyl portion of acetyl-CoA only contains
+two; the carboxylate group left as $CO_2$). Energy from decarboxylations is often used by the
+cell to push an equilibrium towards product formation, as can be seen in several reactions
+in the citric acid cycle and gluconeogenesis.
+
 \subsection{The Krebs cycle}
 The overall result of the Krebs cycle is to split Acetyl-CoA into its constituents, i.e.\
 two molecules of $CO_2$ and the $CoA$ complex. In the process it consumes water $H_2O$ and
@@ -393,11 +412,12 @@ In the following I'll describe each step in the Krebs cycle, and finally give a 
 all the parts in the reaction.
 
 \subsubsection{Citrate Synthase}
+Acetyl-CoA reacts with Oxaloacetate to generate Citrate in an aldol addition.
+Thioester hydrolysis helps to displace equilibrium towards product formation:
 \[
     C_2H_3O{\mhyphen}SCoA + C_4H_2O_5^{2-} + H_2O \rightarrow
     C_6H_6O_7^{2-} + H{\mhyphen}SCoA
 \]
-Acetyl-CoA reacts with Oxaloacetate to generate Citrate.
 
 \subsubsection{Aconitase}
 Water is removed from Citrate to generate Aconitate.
@@ -411,12 +431,18 @@ Then water is re-added to generate Isocitrate.
 \]
 
 \subsubsection{Isocitrate Dehydrogenase}
+This converts Isocitrate into alpha-ketoglutarate.
 \[
     C_6H_6O_7^{2-} + NAD^+ \rightarrow C_5H_4O_5^{2-} + CO_2 + NADH + H^+
 \]
-This converts Isocitrate into alpha-ketoglutarate.
 
 \subsubsection{Alpha-ketoglutarate Dehydrogenase}
+alpha-ketoglutarate is an alpha-ketoacid, i.e., it contains a carbonyl group adjacent to a
+carboxylic acid. We can predict that it will react like pyruvate, i.e., that its
+decarboxylation may yield enough energy to enable the formation of a thioester bond with
+coenzyme A. And this indeed occurs \ldots The enzyme involved (alpha-ketoglutarate dehydrogenase),
+is quite similar to pyruvate dehydrogenase in composition, cofactors and mechanism.
+
 \[
     C_5H_4O_5^{2-} + H{\mhyphen}SCoA + NAD^+ \rightarrow
     C_4H_4O_3^{-}{\mhyphen}SCoA + CO_2 + NADH
@@ -424,6 +450,9 @@ This converts Isocitrate into alpha-ketoglutarate.
 This converts alpha-ketoglutarate into Succinyl-CoA.
 
 \subsubsection{Succinyl-CoA Synthetase}
+Like every thioester bond, the one present in succinyl-CoA is quite energetic. Its
+hydrolysis will be the only step in the citric acid cycle where direct production of ATP
+(or equivalent) occurs.
 \[
     C_4H_4O_3^{-}{\mhyphen}SCoA + GDP^{3-} + HPO_4^{2-} \leftrightarrow
     C_4H_4O_4^{2-} + H{\mhyphen}SCoA + GTP^{4-}
@@ -434,6 +463,15 @@ The remaining steps are to convert the four-carbon molecule Succinate $C_4H_4O_4
 into the four-carbon molecule Oxaloacetate $C_4H_2O_5^{2-}$. These remaining steps
 essentially add a water molecule $H_2O$ to bring in the missing oxygen, and then remove
 the excess hydrogen using $FAD$ and $NAD$.
+
+Like Oxaloacetate, Succinate is a four-carbon product. The last reactions of the citric
+acid cycle will regenerate Oxaloacetate from Succinate. Succinate is first oxidized to
+Fumarate, by the Succinate Dehydrogenase Complex (also known as Complex II), which is
+present in the matrix side of the inner mitochondrial membrane. The redox potential of the
+oxidation of a C-C single bond to a C=C double bond (alkanes to alkenes) is too high to
+enable the involved electrons to be accepted by NAD+ ($E_0$=-320 mV). The cell will therefore
+use FAD ($E_0$= 0 mV) as electron acceptor. Fumarate hydration yields Malate, which can be
+oxidized to Oxaloacetate, thus closing the cycle.
 
 \subsubsection{Succinate Dehydrogenase}
 \[
@@ -447,7 +485,7 @@ This converts Succinate into Fumarate.
 \]
 This converts Fumarate into Malate.
 
-\subsubsection{Malate Dehydrogenas}
+\subsubsection{Malate Dehydrogenase}\label{sec_malate_dehydrogenase}
 \[
     C_4H_4O_5^{2-} + NAD^+ \leftrightarrow C_4H_2O_5^{2-} + NADH + H^+
 \]
@@ -471,6 +509,8 @@ from the Acetyl-CoA. So there is a re-shuffling of carbon atoms occurring in the
 cycle.
 
 \subsection{Oxidative Phosphorylation}
+This is also know as the electron transport chain.
+
 The energy released from one turn of the Krebs cycle is mainly stored in the reduced
 molecules $FADH_2$ and $NADH$, as well as $GTP$. So, later in the metabolic pathway, when
 these products are converted back into $FAD$, $NAD^+$, and $GDP$, this is where most of
@@ -480,14 +520,40 @@ The Krebs cycle in itself does not require oxygen. However, replenishing $FAD$ a
 from the reduced $FADH_2$ and $NADH$ is an oxidation process that requires electron
 acceptors such as oxygen.
 
-\subsection{Pyruvate decarboxylation}
-This reaction is catalyzed by the Pyruvate Dehydrogenase (PDH) Complex.
-\[
-    C_3H_3O_3^- + H{\mhyphen}SCoA + NAD^+ \rightarrow
-    C_2H_3O{\mhyphen}SCoA + CO_2 + NADH
-\]
+$NAD^+$ is oxidized $NAD$, it can receive two electrons.
+Whereas $NADH$ is reduced, it can donate electrons.
 
-This converts Pyruvate to Acetyl-CoA.
+A {\em reduced\/} substrate has all its electrons intact, and can act as electron donor.
+A {\em oxidized\/} substrate has lost some of its electrons, and can act as electron
+acceptor.
+
+\[
+    {\rm reduced substrate} + NAD^+ \rightarrow {\rm oxidized substrate} + NADH + H^+
+\]
+The substrate in this reaction will be oxidized, i.e.\ it loses two electrons and two
+protons, i.e.\ two hydrogen atoms. Similarly, the $NAD^+$ will be reduced, i.e.\ it
+accepts two electrons and one proton (aka a hydride anion).
+
+See section~(\ref{sec_malate_dehydrogenase}), where Malate is oxidized to become
+Oxaloacetate.
+
+Because $NADH$ is reduced it contains a lot of stored energy and it can act as electron
+donor, and it therefore appears at the start of the Electron Transport Chain.
+
+\subsubsection{NADH Dehydrogenase}
+This is also called ``Complex 1'' or ``NADH/uniquinone oxidoreductase''.
+
+The reduced NADH will be oxidixed (thus losing its two extra electrons) and in turn
+the ubiqionone molecule will be reduced (and gaining the two electrons).
+In effect, two carbonyl groups ($=O$) are replaced by corresponding alcohol groups
+(${\mhyphen}OH$).
+
+\[
+    Q + NADH + H^+ \rightarrow QH_2 + NAD^+
+\]
+where $Q$ is Ubiquinone and $QH_2$ is Ubiquinol.
+
+In other words, Complex 1 reduces Ubiquinone and oxidizes NADH\@.
 
 \subsection{Pyruvate Carboxylase}
 The following reaction converts pyruvate into oxaloacetate, and is catalyzed by Pyruvate
@@ -701,6 +767,7 @@ Links:
     \item\href{https://en.wikipedia.org/wiki/Biological_carbon_fixation}{Biological carbon fixation}.
     \item\href{https://courses.lumenlearning.com/wm-nmbiology1/chapter/citric-acid-cycle-and-oxidative-phosphorylation/}{citric
         acid cycle and oxidative phosphorylation}.
+    \item\href{http://homepage.ufp.pt/pedros/bq/tca.htm}{The chemical logic behind \ldots}
 \end{itemize}
 \end{document}
 
