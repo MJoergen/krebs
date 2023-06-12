@@ -541,7 +541,7 @@ Because $NADH$ is reduced it contains a lot of stored energy and it can act as e
 donor, and it therefore appears at the start of the Electron Transport Chain.
 
 \subsubsection{NADH Dehydrogenase}
-This is also called ``Complex 1'' or ``NADH/uniquinone oxidoreductase''.
+This is also called ``Complex I'' or ``NADH/uniquinone oxidoreductase''.
 
 The reduced NADH will be oxidixed (thus losing its two extra electrons) and in turn
 the ubiqionone molecule will be reduced (and gaining the two electrons).
@@ -554,6 +554,86 @@ In effect, two carbonyl groups ($=O$) are replaced by corresponding alcohol grou
 where $Q$ is Ubiquinone and $QH_2$ is Ubiquinol.
 
 In other words, Complex 1 reduces Ubiquinone and oxidizes NADH\@.
+
+The energy released in this process is used to ``pump'' four $H^+$ protons across the
+inner mitoondrial membrane, i.e.\ against the proton gradient.
+
+\subsubsection{Succinate Dehydroginase}
+This is also called ``Complex II''. This is part of the Krebs cycle, where
+Succinate is converted in Fumarate via this reaction:
+\[
+    C_4H_4O_4^{2-} + FAD \leftrightarrow C_4H_2O_4^{2-} + FADH_2
+\]
+In other words, Succinate is oxidized to Fumarate, and $FAD$ is reduced to $FADH_2$.
+
+Then $FADH_2$ is re-oxidized and returns the $H_2$ via this reaction:
+\[
+    Q + FADH_2 \rightarrow QH_2 + FAD
+\]
+
+\subsubsection{Q-cycle}
+This is also called ``Complex III''.
+
+Ubiquinol ($QH_2$) has two electrons to give.
+\[
+    QH_2 \rightarrow QH_2^{2+} + 2e^-
+\]
+
+First, one of these electrons is donated to another molecule of Uniquinone ($Q$), causing the
+formation of a benzene ring.  One oxygen becomes negatively charged, while the other
+becomes a free radical, leading to a Semiquinone.
+\[
+    Q + e^- \rightarrow {}^{\bullet}Q^{-}
+\]
+The other electron is donated to Cytochrome C in the inner membrane space, which will later
+pass it on to Complex IV, see later. Finally, the two protons will go into the inner
+membrane space (again against the proton gradient). So the total reaction so far for
+Ubiquinol is:
+\[
+    QH_2 + Q + C \rightarrow Q + 2H^+ + {}^{\bullet}Q^{-} + C^-
+\]
+
+Now, a second molecule of Ubiquinol ($QH_2$) enters and reacts with the Semiquinone.
+It too will give one electron to Semiquinone, one to Cytochrome C, and two protons
+are pumped into the inner membran space (again against the proton gradient).
+\[
+    QH_2 + {}^{\bullet}Q^{-} + C \rightarrow Q + 2H^+ + C^- + Q^{2-}
+\]
+Finally, two protons from the inner matrix react with the reduced Ubiquinone to give back
+Ubiquinol:
+\[
+    Q^{2-} + 2H^+ \rightarrow QH_2
+\]
+
+Note that $C^-$ only carries an electron, not an additional proton.
+
+The overall net result of this Q-cycle is the following:
+\[
+    QH_2 + 2H^+ + 2C \rightarrow Q + 4H^+ + 2C^-
+\]
+
+\subsubsection{Complex IV}
+This is also called ``Complex IV''.
+This reacts one molecule of oxygen ($O_2$) with four protons (from the matrix) and four
+electrons (from Cytochrome C) to give two molecules of water. The energy released
+from this reaction is used to pump four protons into the inner membrane space.
+Overall, this can be written as:
+\[
+    8H^+ + O_2 + 4C^- \rightarrow 4C + 2H_2O + 4H^+
+\]
+This is the only step that is dependent on oxygen. However, the whole electron transport
+chain is dependent on this step functioning.
+
+\subsubsection{Summary}
+The overall net result of the electron transport chain is to take the electrons from the
+reduced $NADH$ and $FADH_2$ and donate them to oxygen, thereby releasing a large amount of
+energy. The reaction is:
+\[
+    FADH_2 + NADH + H^+ + O_2 \rightarrow FAD + NAD^+ + 2H_2O
+\]
+The energy relased (from reducing oxygen) is used to pump up to twelve protons across the
+membrane (against the proton gradient).
+
 
 \subsection{Pyruvate Carboxylase}
 The following reaction converts pyruvate into oxaloacetate, and is catalyzed by Pyruvate
