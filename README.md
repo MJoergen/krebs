@@ -5,6 +5,7 @@ the Kreb's cycle (forward and reverse), covering both metabolism and carbon fixa
 
 ## Wikipedia links:
 * [Biological carbon fixation](https://en.wikipedia.org/wiki/Biological_carbon_fixation)
+* [Bond-dissociation energy](https://en.wikipedia.org/wiki/Bond-dissociation_energy)
 
 ## Note to self
 

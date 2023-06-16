@@ -2,6 +2,7 @@
 \usepackage{chemfig}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{booktabs}
 \def\mhyphen{{\hbox{-}}}
 \begin{document}
 
@@ -373,6 +374,17 @@ This consists of a combination of dihydroxyacetone and glyceraldehyde.
 \pagebreak
 \section{Reactions}\label{sec_reactions}
 
+\subsection{Respiration}
+\[
+    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O
+\]
+This is the overall net reaction for respiration. The total energy released can be calculated as
+$6*241.8 + 6*393.5 - 1271 = 2541$ kJ/mol.
+
+The carbon atoms go from oxidation state of 0 to +4, which means the carbon atoms become
+oxidized. Essentially donating their electrons to oxygen.
+
+\subsection{ADP/ATP}
 Energy is released from $ATP$ by the following reaction splitting it into $ADP$ and a
 phosphate $PO_3^-$ group.
 \[
@@ -521,6 +533,13 @@ cycle.
 \subsection{Oxidative Phosphorylation}
 This is also know as the electron transport chain.
 
+The energy stored in the chemical bonds of glucose is released by the cell in the citric
+acid cycle producing carbon dioxide, and the energetic electron donors NADH and FADH\@.
+Oxidative phosphorylation uses these molecules and $O_2$ to produce ATP, which is used
+throughout the cell whenever energy is needed. During oxidative phosphorylation, electrons
+are transferred from the electron donors to a series of electron acceptors in a series of
+redox reactions ending in oxygen, whose reaction releases half of the total energy.
+
 The flow of electrons through the electron transport chain is an exergonic process. The
 energy from the redox reactions creates an electrochemical proton gradient that drives the
 synthesis of adenosine triphosphate (ATP). In aerobic respiration, the flow of electrons
@@ -666,6 +685,45 @@ Carboxylase.
     {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow
     {ADP}^{3-} + {HPO_4}^{2-} + {C_4H_3O_5}^-
 \]
+
+\subsection{Methanogenesis}
+Methanogens are a type of archaea. They produce methane via the following net reaction:
+\[
+    CO_2 + 4H_2 \rightarrow CH_4 + 2H_2O
+\]
+This is an exothermic reaction, i.e.\ it produces energy.
+
+\href{https://en.wikipedia.org/wiki/Standard_enthalpy_of_formation}{Standard enthalpy of
+formation}:
+
+\begin{tabular}{l  r}         \toprule
+    substance & $\Delta G$ \\ \midrule
+    $CO_2$    & -393.5     \\
+    $H_2$     & 0.0        \\
+    $CH_4$    & -74.6      \\
+    $O_2$     & 0.0        \\
+    $H_2O$    & -241.8     \\ \bottomrule
+\end{tabular}
+
+This shows the energy released by the above reaction is:
+\[
+    -393.5 + 0.0 - (-74.6 + 2*(-241.8)) = 164.7 kJ/mol
+\]
+Per mole of hydrogen $H_2$ this becomes $164.7/4 = 41.2 kJ/mol$.
+
+Compare this with the following reaction
+\[
+    O_2 + 2H_2 \rightarrow 2H_2O
+\]
+The energy released in this reaction is:
+\[
+    0.0 + 0.0 - (2*(-241.8)) = 483.6 kJ/mol
+\]
+Per mole of hydrogen $H_2$ this becomes $483.6/2 = 241.8 kJ/mol$.
+
+So, the above shows that hydrogen $H_2$ would much rather react with oxygen $O_2$ than
+with carbon dioxide $CO_2$. The reason essentially boils down to the fact that it takes
+significant energy to break the two double bonds in $CO_2$ to release the oxygen.
 
 \subsection{Glycolysis}
 \[
