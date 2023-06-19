@@ -10,9 +10,41 @@
 
 \section{Introduction}
 
-This document is about the bio-chemical processes happening in cells during metabolism and
+This document is about the biochemical processes happening in cells during metabolism and
 respiration. The main entity in this process is the Krebs cycle.
 
+The main purpose is for me to simultaneously understand what happens in modern cells today
+during respiration, and to understand how early protocells could (hypothetically) have
+worked.
+
+\subsection{Respiration}
+The overall purpose of respiration is to break down a Glucose molecule into $CO_2$ and
+$H_2O$:
+
+\[
+    C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O
+\]
+
+This process is exergonic, i.e.\ it releases energy. This released energy is then
+ultimately stored in $ATP$.
+
+The mechanism involved in respiration is very complicated and involves:
+\begin{itemize}
+    \item Glycolysis
+    \item Krebs cycle
+    \item Electron Transport Chain
+\end{itemize}
+
+Note that the above completely neglects the process of synthesis of organic molecules.
+Plants solve this problem via photo synthesis. Other animals use predation.
+
+\subsection{Early protocells}
+Obviously, early cells did not have enzymes needed for Glycolysis or the Krebs cycle.
+However, it is hypothesized that they did have a rudimentary electron transport chain.
+In early cells there was presumably an abundance of energy, so the main problem was
+how to synthesize organic molecules.
+
+\subsection{Reverse Krebs cycle}
 The reverse Krebs cycle is a sequence of chemical reactions that are used by some bacteria
 to produce carbon compounds from carbon dioxide and water by the use of energy-rich
 reducing agents as electron donors.  Where the Krebs cycle takes carbohydrates and
@@ -30,11 +62,11 @@ chemistry is based on the concepts of electropositivity (for donors) and electro
 (for acceptors) of atomic or molecular entities.}.
 
 There are three enzymes specific to the reductive Krebs cycle: citrate lyase,
-fumarate reductase, and α-ketoglutarate synthase.
+fumarate reductase, and alpha-ketoglutarate synthase.
 
 The splitting of citric acid to oxaloacetate and acetate is catalyzed by citrate lyase,
 rather than the reverse reaction of citrate synthase. Succinate dehydrogenase is
-replaced by fumarate reductase and α-ketoglutarate synthase replaces α-ketoglutarate
+replaced by fumarate reductase and alpha-ketoglutarate synthase replaces α-ketoglutarate
 dehydrogenase.
 
 The conversion of succinate to 2-oxoglutarate is also different. In the oxidative reaction
@@ -46,6 +78,13 @@ reverse reaction. In the reverse Krebs cycle, this reaction has to use a reduced
 The organisation is as follows: In section~(\ref{sec_prerequisites}) we begin by
 establishing some facts from organic chemistry. Then in section~(\ref{sec_players})
 we list the main characters taking place in this chemical dance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\section{Prerequisites}\label{sec_prerequisites}
+
+Organic compounds are named after certain ``functional groups'' in the atomic structure.
 
 \subsection{Redox reaction}
 In their pre-reaction states, reducers (i.e. {\em electron donors\/}) have extra electrons
@@ -68,6 +107,21 @@ For example, consider the overall reaction for aerobic cellular respiration:
 The oxygen ($O_2$) is being reduced, so it is the oxidizing agent. The glucose
 ($C_6H_{12}O_6$) is being oxidized, so it is the reducing agent.
 
+Endergonic and exergonic refer to free energy changes (delta G). Endothermic and
+exothermic refer to the changes in internal energy of molecules, measured as heat given
+off or taken up, delta H. Delta G takes into account not only changes in internal energy
+but also changes in entropy (delta S) that may accompany a reaction. For most ordinary
+simple chemical reactions, the entropy factor is not great, so chemists usually talk about
+delta H. For many biological reactions,the entropy factor is significant, so biochemists
+usually talk about delta G. $\Delta G = \Delta H - T \Delta S $. Despite the signs, which
+have to do with the way these terms are defined, delta G is the sum of the 2 effects.
+Becker presents this very nicely. You may forget about delta H for this course. More in a
+later lecture.
+
+\subsection{Reduction Potential}
+\href{https://en.wikipedia.org/wiki/Table_of_standard_reduction_potentials_for_half-reactions_important_in_biochemistry}{Reduction
+Potential}
+
 \subsection{Electron donor = reducing agent}
 
 Strong reducing agents easily lose (or donate) electrons. An atom with a relatively large
@@ -79,17 +133,12 @@ to attract bonding electrons, and species with relatively small ionization energ
 as good reducing agents too.
 
 The measure of a material's ability to reduce is known as its
-\href{https://en.wikipedia.org/wiki/Reduction_potential} reduction potential.
+\href{https://en.wikipedia.org/wiki/Reduction_potential}{reduction potential}.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Molecyle types}
 
-\pagebreak
-\section{Prerequisites}\label{sec_prerequisites}
-
-Organic compounds are named after certain ``functional groups'' in the atomic structure.
-
-\subsection{Alkane}
+\subsubsection{Alkane}
 
 An alkane consists of carbon and hydrogen only, and with only single carbon-carbon bond.
 They have the general chemical formula $C_{n}H_{2n+2}$. They are {\em saturated\/}
@@ -98,7 +147,7 @@ due to the lack of double bonds (and hence less reactive?).
 Examples of alkanes are methane ($CH_4$), ethane ($C_2H_6$), and octane ($C_{8}H_{18}$).
 Methane is produced by methanogenic bacteria.
 
-\subsection{Alkene}
+\subsubsection{Alkene}
 
 An alkene consists of carbon and hydrogen only, and with one carbon-carbon double bond.
 They have the general chemical formula $C_{n}H_{2n}$. The double bond is stronger than
@@ -108,7 +157,7 @@ Alkenes react in many addition reactions, which occur by opening up the double-b
 
 Examples of alkanes are ethylene ($C_2H_4$) and propylene ($C_3H_6$).
 
-\subsection{Aldehyde}
+\subsubsection{Aldehyde}
 
 \chemfig{R-C (=[1]O) (-[7]H)}
 
@@ -118,7 +167,7 @@ formyl group}.
 Examples of aldehydes are: formaldehyde, acetaldehyde, glucose. However, in aqueous
 solution only a tiny fraction of glucose exists as the aldehyde.
 
-\subsection{carboxylic acid}
+\subsubsection{carboxylic acid}
 \chemfig{R-C (=[1]O) (-[7]OH)}
 
 Carboxylic acids are polar. Because they are both hydrogen-bond acceptors (the {\em
@@ -130,7 +179,7 @@ Most carboxylic acids can be reduced to alcohols by hydrogenation.
 
 Examples are formic acid (formate) and acetic acid (acetate).
 
-\subsection{ester}
+\subsubsection{ester}
 \chemfig{R-C (=[1]O) (-[7]OR')}
 
 They are formed when a carboxylic acid reacts via a condensation reaction (i.e.\ releasing
@@ -143,10 +192,10 @@ Similarly, a phosphate ion $HPO_4^{2-}$ can react with an alcohol --- again via 
 condensation reaction --- yielding a phosphoester link. In fact, a phophate ion can make
 two phosphoester links, binding to two different alcohols.
 
-\subsection{ketone}
+\subsubsection{ketone}
 \chemfig{R-C (=[1]O) (-[7]R')}
 
-\subsection{carbohydrate}
+\subsubsection{carbohydrate}
 A carbohydrate is a biomolecule consisting of carbon (C), hydrogen (H) and oxygen (O)
 atoms, usually with a hydrogen–oxygen atom ratio of 2:1 (as in water) and thus with the
 empirical formula $C_m{(H_2O)}_n$ (where m may or may not be different from n), which does
@@ -384,6 +433,10 @@ $6*241.8 + 6*393.5 - 1271 = 2541$ kJ/mol.
 The carbon atoms go from oxidation state of 0 to +4, which means the carbon atoms become
 oxidized. Essentially donating their electrons to oxygen.
 
+The breakdown of glucose releases a lot of energy, but most of this energy is stored in
+bonding ADP and inorganic phosphate to generate ATP, i.e.\ as chemical energy. Only a
+small proportion of energy relased from glucose is actually emitted as heat.
+
 \subsection{ADP/ATP}
 Energy is released from $ATP$ by the following reaction splitting it into $ADP$ and a
 phosphate $PO_3^-$ group.
@@ -532,6 +585,16 @@ cycle.
 
 \subsection{Oxidative Phosphorylation}
 This is also know as the electron transport chain.
+
+Basically, electrons are stripped from the food (glucose) and transported --- via $NADH$
+and $FADH_2$ --- to the cell membrane. Here, the electrons in a sequence of steps
+lose most of their energy, which is instead used to pump protons out through
+the cell wall (against the proton gradient) and finally the electrons are accepted by
+oxygen, which together with protons generate water:
+
+\[
+    4H^+ + O_2 + 4e^- \rightarrow 2H_2O
+\]
 
 The energy stored in the chemical bonds of glucose is released by the cell in the citric
 acid cycle producing carbon dioxide, and the energetic electron donors NADH and FADH\@.
@@ -691,7 +754,9 @@ Methanogens are a type of archaea. They produce methane via the following net re
 \[
     CO_2 + 4H_2 \rightarrow CH_4 + 2H_2O
 \]
-This is an exothermic reaction, i.e.\ it produces energy.
+This is an exothermic reaction, i.e.\ it produces energy. Funnily enough, the methane
+is here considered a waste product; it's the energy released by the reaction that is
+important.
 
 \href{https://en.wikipedia.org/wiki/Standard_enthalpy_of_formation}{Standard enthalpy of
 formation}:
@@ -711,6 +776,9 @@ This shows the energy released by the above reaction is:
 \]
 Per mole of hydrogen $H_2$ this becomes $164.7/4 = 41.2 kJ/mol$.
 
+In the \href{https://www.youtube.com/watch?v=FWVAyAnrhXU}{video} I see the following value
+cited $\Delta G = -131 kJ/mol$.
+
 Compare this with the following reaction
 \[
     O_2 + 2H_2 \rightarrow 2H_2O
@@ -724,6 +792,22 @@ Per mole of hydrogen $H_2$ this becomes $483.6/2 = 241.8 kJ/mol$.
 So, the above shows that hydrogen $H_2$ would much rather react with oxygen $O_2$ than
 with carbon dioxide $CO_2$. The reason essentially boils down to the fact that it takes
 significant energy to break the two double bonds in $CO_2$ to release the oxygen.
+
+Similarly, there is this reaction used by the acetogens (bacteria):
+\[
+    2CO_2 + 4H_2 \rightarrow C_2H_5O_2 + 2H_2O
+\]
+In the \href{https://www.youtube.com/watch?v=FWVAyAnrhXU}{video} I see this reaction have
+the value $\Delta G = -104 kJ/mol$.
+
+In general, protons $H^+$ reduce $CO_2$ to form organic molecules.
+
+But maybe the very first reaction is
+\[
+    CO_2 + 2H^+ + 2e^- \rightarrow CH_2O_2
+\]
+What is the thermodynamics of this reaction?
+And how do you get to formaldehyde (?) $CH_2O$?
 
 \subsection{Glycolysis}
 \[
@@ -912,6 +996,12 @@ reduced by NADPH\@. One such ferredoxin is adrenoxin (-274mV) which takes part i
 biosynthesis of many mammalian steroids.  The ferredoxin Fd3 in the roots of plants that
 reduces nitrate and sulfite has a midpoint potential of -337mV and is also reduced by
 NADPH\@.
+
+\section{Proto-life}
+In the early days of Earth's history, there was no oxygen. So metals like iron (Fe) and
+sulphur (S) could exist in non-oxidized form.
+
+The origin of life in alkaline hydrothermal vents
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
