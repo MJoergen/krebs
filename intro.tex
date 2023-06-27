@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[a4paper,14pt]{extarticle}
 \usepackage{chemfig}
 \usepackage{hyperref}
 \usepackage{amsmath}
@@ -11,8 +11,8 @@
 
 \section{Introduction}
 
-This document is about the biochemical processes happening in cells during metabolism and
-respiration.
+This document is about the biochemical processes happening in animal and plant cells
+during respiration and photosynthesis.
 
 The main purpose is for me to simultaneously understand what happens in modern cells today
 during respiration, and to understand how early protocells could (hypothetically) have
@@ -25,74 +25,73 @@ $H_2O$:
 \[
     C_6H_{12}O_6 + 6O_2 \rightarrow 6CO_2 + 6H_2O
 \]
-\ednote{Add value for energy released, and link to section later in this document, where
-the calculation is actually performed.}
 
-This process is exergonic, i.e.\ it releases energy. This released energy is then
-ultimately stored in $\mathit{ATP}$.
+This is the overall net reaction for respiration. The total energy released can be
+calculated as $6\cdot 241.8 + 6\cdot 393.5 - 1271 = 2541$ kJ/mol, see
+Section~\ref{sec_thermodynamics}.
+This process is exergonic, i.e.\ it releases energy. This released energy is then stored
+in $\mathit{ATP}$.
 
-This is the overall net reaction for respiration. The total energy released can be calculated as
-$6*241.8 + 6*393.5 - 1271 = 2541$ kJ/mol.
+The Carbon atoms go from oxidation state of 0 to +4, which means the Carbon atoms become
+oxidized. Essentially donating their electrons to Oxygen, see
+Section~\ref{sec_oxidation_states}.
 
-The carbon atoms go from oxidation state of 0 to +4, which means the carbon atoms become
-oxidized. Essentially donating their electrons to oxygen.
+The breakdown of Glucose releases a lot of energy, but most of this energy is stored in
+bonding ADP and inorganic phosphate to generate $\mathit{ATP}$, i.e.\ as chemical energy.
+Only a small proportion of energy relased from glucose is actually emitted as heat.
 
-The breakdown of glucose releases a lot of energy, but most of this energy is stored in
-bonding ADP and inorganic phosphate to generate $\mathit{ATP}$, i.e.\ as chemical energy. Only a
-small proportion of energy relased from glucose is actually emitted as heat.
-
-The mechanism involved in respiration is very complicated and involves:
+The detailed mechanism involved in respiration is very complicated and involves:
 \begin{itemize}
-    \item Glycolysis: Break-down of Glucose intro Acetate
-    \item Krebs cycle: Break-down of Acetate into $CO_2$
+    \item Glycolysis: Breakdown of Glucose into Acetate.
+    \item Krebs cycle: Breakdown of Acetate into $CO_2$.
     \item Electron Transport Chain: Proton pump and reducing Oxygen.
+    \item Formation of $\mathit{ATP}$.
 \end{itemize}
 
-Note that the above completely neglects the process of synthesis of organic molecules.
-Plants solve this problem via photo synthesis. Animals use predation, i.e.\ by eating
-plants or other animals.
+Note that in the above there is no synthesis of organic molecules.  Plants solve this
+problem via photosynthesis, whereas animals use predation, i.e.\ by eating plants or
+other animals.
 
 \subsubsection{Early protocells}
 Respiration in modern cells require a host of enzymes in order to run efficiently.
-Obviously, early cells did not have enzymes needed for Glycolysis or the Krebs cycle.
-However, it is hypothesized that they did have a rudimentary electron transport chain.
-In early cells there was presumably an abundance of energy, so the main problem was
-how to synthesize organic molecules.
+Obviously, early cells did not have these enzymes needed for Glycolysis or the Krebs
+cycle.  However, it is hypothesized that they did have a rudimentary electron transport
+chain.  In early cells there was presumably an abundance of energy plus sufficient
+Iron-Sulfide complexes, so the main problem was how to synthesize organic molecules.
 
 \subsection{Synthesis of organic molecules}
 The reverse Krebs cycle is a sequence of chemical reactions that are used by some bacteria
-to produce carbon compounds from carbon dioxide and water by the use of energy-rich
-reducing agents as electron donors.  Where the Krebs cycle takes carbohydrates and
-oxidizes them to $CO_2$ and water, the reverse cycle takes $CO_2$ and $H_2O$ to make carbon
-compounds. This process is used by some bacteria (such as Aquificota) to synthesize carbon
-compounds, sometimes using hydrogen, sulfide, or thiosulfate as
-\href{https://en.wikipedia.org/wiki/Electron_donor}{electron donors}\footnote{An
-electron donor is a chemical entity that donates electrons to another compound. It is a
-\href{https://en.wikipedia.org/wiki/Reducing_agent}{reducing agent} that, by virtue of
-its donating electrons, is itself oxidized in the
-process. The electron donating power of a donor molecule is measured by its ionization
-potential which is the energy required to remove an electron from the highest occupied
-molecular orbital (HOMO). The driving forces for electron donor and acceptor behavior in
-chemistry is based on the concepts of electropositivity (for donors) and electronegativity
-(for acceptors) of atomic or molecular entities.}.
+to produce Carbon compounds from $CO_2$ and $H_2O$ by the use of energy-rich reducing
+agents as electron donors.  Where the Krebs cycle takes carbohydrates and oxidizes them to
+$CO_2$ and $H_2O$, the reverse cycle takes $CO_2$ and $H_2O$ plus additional energy to
+make carbon compounds. This process is used by some bacteria (such as Aquificota) to
+synthesize carbon compounds, sometimes using hydrogen, sulfide, or thiosulfate as
+\href{https://en.wikipedia.org/wiki/Electron_donor}{electron donors}\footnote{An electron
+donor is a chemical entity that donates electrons to another compound. It is a
+\href{https://en.wikipedia.org/wiki/Reducing_agent}{reducing agent} that, by virtue of its
+donating electrons, is itself oxidized in the process. The electron donating power of a
+donor molecule is measured by its ionization potential which is the energy required to
+remove an electron from the highest occupied molecular orbital (HOMO). The driving forces
+for electron donor and acceptor behavior in chemistry is based on the concepts of
+electropositivity (for donors) and electronegativity (for acceptors) of atomic or
+molecular entities.}.
 \ednote{Maybe add something about methanogens.}
 \ednote{Maybe add some hypothesis about early procells.}
 
-\subsubsection{Reverse Krebs cycle}
-\ednote{Maybe move this section later?}
-There are three enzymes specific to the Reverse Krebs cycle (also called reductive Krebs
-cycle): citrate lyase, fumarate reductase, and alpha-ketoglutarate synthase.
+\[
+    CO_2 + 4H_2 \rightarrow CH_4 + 2H_2O
+\]
 
-The splitting of citric acid to oxaloacetate and acetate is catalyzed by citrate lyase,
-rather than the reverse reaction of citrate synthase. Succinate dehydrogenase is
-replaced by fumarate reductase and alpha-ketoglutarate synthase replaces alpha-ketoglutarate
-dehydrogenase.
+\subsection{The role of Oxygen}
+\[
+    FADH_2 + NADH + H^+ + O_2 \rightarrow FAD + NAD^+ + 2H_2O
+\]
 
-The conversion of succinate to 2-oxoglutarate is also different. In the oxidative reaction
-this step is coupled to the reduction of NADH\@. However, the oxidation of 2-oxoglutarate to
-succinate is so energetically favorable, that NADH lacks the reductive power to drive the
-reverse reaction. In the reverse Krebs cycle, this reaction has to use a reduced low potential
-\href{https://en.wikipedia.org/wiki/Ferredoxin}{ferredoxin}.
+\subsubsection{Early protocells}
+Write here a short summary of the main hypothesis by Nick Lane et al. Something about
+proton gradient enabling reactions that are otherwise thermodynamically unfavored.
+
+\subsection{Outline}
 
 The organisation is as follows: In Section~\ref{sec_prerequisites} we begin by
 establishing some facts from organic chemistry. Then in Section~\ref{sec_players}
@@ -105,16 +104,29 @@ we list the main characters taking place in this chemical dance.
 
 This section will be a short primer on organic chemistry.
 
-\subsection{Oxidation state}
-In their pre-reaction states, reducers (i.e. {\em electron donors\/}) have extra electrons
-(that is, they are by themselves reduced) and oxidizers (i.e. {\em electron acceptors\/})
-lack electrons (that is, they are by themselves oxidized). The Oxygen molecule $O_2$ is an
-example of an excellent oxidizer, i.e.\ electron acceptor. This is commonly expressed in
-terms of their oxidation states. An agent's oxidation state describes its degree of loss
+\subsection{Oxidation state}\label{sec_oxidation_states}
+
+A molecule with excess electrons is called {\em reduced\/} or {\em electron donor}, while
+a molecule with a lack of electrons is called {\em oxidized\/} or {\em electron acceptor}.
+A reduced molecule may reduce another molecule by passing on its excess electrons.
+Similarly, an oxidized molecule may oxidize another molecule by ``stealing'' its excess
+electrons.
+
+An atoms's oxidation state describes its degree of loss
 of electrons, where the higher the oxidation state then the fewer electrons it has.
 So initially, prior to the reaction, a reducing agent is typically in one of its lower
 possible oxidation states; its oxidation state increases during the reaction while that of
 the oxidizer decreases.
+
+In their pre-reaction states, reducers (i.e. {\em electron donors\/}) have extra electrons
+(that is, they are by themselves reduced) and oxidizers (i.e. {\em electron acceptors\/})
+lack electrons (that is, they are by themselves oxidized). The Oxygen molecule $O_2$ is an
+example of an excellent oxidizer, i.e.\ electron acceptor. This is commonly expressed in
+terms of their oxidation states.
+
+\subsubsection{How to calculate oxidation state}
+Describe the method using a few relevant examples, e.g. $H_2$, $H_2O$, $CO_2$, $CH_4$,
+$CH_3COOH$, etc. And maybe (if applicable?) add some general guidelines.
 
 \subsection{Electron donor = reducing agent}
 Strong reducing agents easily lose (or donate) electrons. An atom with a relatively large
@@ -127,6 +139,20 @@ as good reducing agents too.
 
 The measure of a material's ability to reduce is known as its
 \href{https://en.wikipedia.org/wiki/Reduction_potential}{reduction potential}.
+
+\subsection{Redox reaction}
+In a redox reaction, the agent whose oxidation state increases, that ``loses/donates
+electrons'', that ``is oxidized'', and that ``reduces'' is called the reducer or reducing
+agent, while the agent whose oxidation state decreases, that ``gains/accepts/receives
+electrons'', that ``is reduced'', and that ``oxidizes'' is called the oxidizer or
+oxidizing agent.
+
+For example, consider the overall reaction for aerobic cellular respiration:
+\[
+    C_6H_{12}O_6(s) + 6O_2(g) \rightarrow 6CO_2(g) + 6H_2O(l)
+\]
+The Oxygen ($O_2$) is being reduced, so it is the oxidizing agent. The Glucose
+($C_6H_{12}O_6$) is being oxidized, so it is the reducing agent.
 
 $NAD^+$ is oxidized $NAD$, it can receive two electrons.
 Whereas $NADH$ is reduced, it can donate electrons.
@@ -149,32 +175,19 @@ Because $NADH$ is reduced it contains a lot of stored energy and it can act as e
 donor, and it therefore appears at the start of the Electron Transport Chain.
 
 
-\subsection{Redox reaction}
-In a redox reaction, the agent whose oxidation state increases, that ``loses/donates
-electrons'', that ``is oxidized'', and that ``reduces'' is called the reducer or reducing
-agent, while the agent whose oxidation state decreases, that ``gains/accepts/receives
-electrons'', that ``is reduced'', and that ``oxidizes'' is called the oxidizer or
-oxidizing agent.
-
-For example, consider the overall reaction for aerobic cellular respiration:
-\[
-    C_6H_{12}O_6(s) + 6O_2(g) \rightarrow 6CO_2(g) + 6H_2O(l)
-\]
-The oxygen ($O_2$) is being reduced, so it is the oxidizing agent. The glucose
-($C_6H_{12}O_6$) is being oxidized, so it is the reducing agent.
-
-\subsection{Thermodynamics}
-Endergonic and exergonic refer to free energy changes (delta G). Endothermic and
+\subsection{Thermodynamics}\label{sec_thermodynamics}
+Endergonic and exergonic refer to free energy changes ($\Delta G$). Endothermic and
 exothermic refer to the changes in internal energy of molecules, measured as heat given
-off or taken up, delta H. Delta G takes into account not only changes in internal energy
-but also changes in entropy (delta S) that may accompany a reaction. For most ordinary
+off or taken up, $\Delta H$. $\Delta G$ takes into account not only changes in internal energy
+but also changes in entropy ($\Delta S$) that may accompany a reaction. For most ordinary
 simple chemical reactions, the entropy factor is not great, so chemists usually talk about
-delta H. For many biological reactions,the entropy factor is significant, so biochemists
-usually talk about delta G. $\Delta G = \Delta H - T \Delta S $. Despite the signs, which
+$\Delta H$. For many biological reactions,the entropy factor is significant, so biochemists
+usually talk about $\Delta G$. $\Delta G = \Delta H - T \Delta S $. Despite the signs, which
 have to do with the way these terms are defined, $\Delta G$ is the sum of the two effects.
 
 \href{https://en.wikipedia.org/wiki/Standard_enthalpy_of_formation}{Standard enthalpy of
 formation}:
+\ednote{Do I really mean enthalpy?}
 
 \begin{tabular}{l  r}         \toprule
     substance & $\Delta G$ \\ \midrule
@@ -196,11 +209,11 @@ Organic compounds are named after certain ``functional groups'' in the atomic st
 
 \subsubsection{Alkane}
 
-An alkane consists of carbon and hydrogen only, and with only single carbon-carbon bonds.
+An alkane consists of Carbon and Hydrogen only, and with only single carbon-carbon bonds.
 They have the general chemical formula $C_{n}H_{2n+2}$. They are {\em saturated\/}
 due to the lack of double bonds (and hence less reactive?).
 
-Examples of alkanes are methane ($CH_4$), ethane ($C_2H_6$), and octane ($C_{8}H_{18}$).
+Examples of alkanes are Methane ($CH_4$), Ethane ($C_2H_6$), and Octane ($C_{8}H_{18}$).
 Methane is produced by methanogenic bacteria.
 
 \subsubsection{Alkene}
@@ -209,18 +222,23 @@ An alkene consists too of carbon and hydrogen only, but with one carbon-carbon d
 They have the general chemical formula $C_{n}H_{2n}$. The double bond is stronger than
 a single bond, but not twice as strong.
 
-Alkenes react in many addition reactions, which occur by opening up the double-bond.
+Alkenes react in many addition reactions, which occur by opening up the Carbon-Carbon
+double-bond.
 
-Examples of alkanes are ethylene ($C_2H_4$) and propylene ($C_3H_6$).
+Examples of alkanes are Ethylene ($C_2H_4$) and Propylene ($C_3H_6$).
 
 \subsubsection{Alcohol}
 \chemfig{R-OH}
 
 An alcohol is a type of organic compound that carries at least one hydroxyl
-(${\mhyphen}OH$) functional group bound to a saturated carbon atom. Alcohols range from the
-simple, like methanol and ethanol, to complex, like sucrose and cholesterol. The presence
-of an OH group strongly modifies the properties of hydrocarbons, conferring hydrophilic
-(water-loving) properties. The OH group provides a site at which many reactions can occur.
+(${\mhyphen}OH$) functional group bound to a saturated (i.e.\ only single bonded) carbon
+atom. Alcohols range from the simple, like Methanol and Ethanol, to complex, like Sucrose
+and Cholesterol. The presence of an $OH$ hydroxyl group strongly modifies the properties
+of hydrocarbons, conferring hydrophilic (water-loving) properties. The $OH$ hydroxyl group
+provides a site at which many reactions can occur.
+
+\subsubsection{Thiol}
+\chemfig{R-SH}
 
 \subsubsection{Aldehyde}
 
@@ -229,8 +247,8 @@ of an OH group strongly modifies the properties of hydrocarbons, conferring hydr
 The functional group (O=C---H) is called {\em aldehyde group\/} but also sometimes {\em
 formyl group}.
 
-Examples of aldehydes are: formaldehyde, acetaldehyde, glucose. However, in aqueous
-solution only a tiny fraction of glucose exists as the aldehyde.
+Examples of aldehydes are: Formaldehyde, Acetaldehyde, Glucose. However, in aqueous
+solution only a tiny fraction of Glucose exists as the aldehyde.
 
 \subsubsection{carboxylic acid}
 \chemfig{R-C (=[1]O) (-[7]OH)}
@@ -241,22 +259,23 @@ participate in hydrogen bonding. Together, the hydroxyl and carbonyl group form 
 functional group {\em carboxyl}.
 Carboxylic acids play a prominent role in biochemistry.
 
-Most carboxylic acids can be reduced to alcohols by hydrogenation.
+Most carboxylic acids can be reduced to alcohols by hydrogenation, i.e.\ by adding
+$H_2O$ and releasing $O_2$.\ednote{Give an example.}
 
-Examples are formic acid (formate) and acetic acid (acetate).
+Examples are Formic acid (Formate) and Acetic acid (Acetate).
 
 \subsubsection{ester}
 \chemfig{R-C (=[1]O) (-[7]O -[0]R')}
 
-They are formed when a carboxylic acid reacts via a condensation reaction (i.e.\ releasing
-water) with an alcohol:
+They are formed when a carboxylic acid reacts with an alcohol via a condensation reaction
+(i.e.\ releasing water):
 \[
-    RCOOH + R'OH \rightarrow RCOOR' + H_2O
+    R{\mhyphen}COOH + R'{\mhyphen}OH \rightarrow R{\mhyphen}COO{\mhyphen}R' + H_2O
 \]
 
 Similarly, a phosphate ion $HPO_4^{2-}$ can react with an alcohol --- again via a
-condensation reaction --- yielding a phosphoester link. In fact, a phophate ion can make
-two phosphoester links, binding to two different alcohols.
+condensation reaction --- yielding a phosphoester link.\ednote{Give an example} In fact, a
+phophate ion can make two phosphoester links, binding to two different alcohols.
 
 \subsubsection{ketone}
 \chemfig{R-C (=[1]O) (-[7]R')}
@@ -264,17 +283,19 @@ two phosphoester links, binding to two different alcohols.
 \subsubsection{carbohydrate}
 A carbohydrate is a biomolecule consisting of carbon (C), hydrogen (H) and oxygen (O)
 atoms, usually with a hydrogen–oxygen atom ratio of 2:1 (as in water) and thus with the
-empirical formula $C_m{(H_2O)}_n$ (where $m$ may or may not be different from $n$), which does
-not mean the $H$ has covalent bonds with $O$ (for example with $CH_2O$, $H$ has a covalent bond
-with $C$ but not with $O$). However, not all carbohydrates conform to this precise
-stoichiometric definition (e.g., uronic acids, deoxy-sugars such as fucose), nor are all
-chemicals that do conform to this definition automatically classified as carbohydrates
-(e.g.\ formaldehyde and acetic acid).
+empirical formula $C_m{(H_2O)}_n$ (where $m$ may or may not be different from $n$). This
+does not mean the $H$ has covalent bonds with $O$ (for example with $CH_2O$, $H$ has a
+covalent bond with $C$ but not with $O$). However, not all carbohydrates conform to this
+precise stoichiometric definition (e.g., Uronic acids, Deoxy-sugars such as Fucose), nor
+are all chemicals that do conform to this definition automatically classified as
+carbohydrates (e.g.\ Formaldehyde and Acetic acid).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \pagebreak
 \section{The players}\label{sec_players}
+In the following we list the most prominent molecules, according to their type.
+\ednote{Add more text to each molecule}
 
 \subsection{Aldehydes}
 
@@ -390,6 +411,7 @@ bond is not acidic.
     \item Chemical formula $C_6H_3O_7^{3-}$.
     \item Standard enthalpy of formation:
 \end{itemize}
+This is a tricarboxylic acid, because it has three carboxyl groups.
 
 \subsubsection{Citrate}
 \chemfig{C (=[3]O) (-[5]{O^-}) -C (-[2]H) (-[6]H) -C (-[2]OH) (-[6] C (=[5]O) (-[7]{O^-}))
@@ -422,7 +444,7 @@ This is a tricarboxylic acid, because it has three carboxyl groups.
 \begin{itemize}
     \item Chemical formula $C_6H_8O_6$.
 \end{itemize}
-The ascorbate ion is the predominant species at typical biological pH values. It is a mild
+The Ascorbate ion is the predominant species at typical biological pH values. It is a mild
 reducing agent and antioxidant. It is oxidized with loss of one electron to form a radical
 cation and then with loss of a second electron to form dehydroascorbic acid. It typically
 reacts with oxidants of the reactive oxygen species, such as the hydroxyl radical.
@@ -434,18 +456,19 @@ reaction is:
 \[
     RO + C_6H_7O_6^- \rightarrow RO^− + C_6H_7O_6 \rightarrow ROH + C_6H_6O_6
 \]
+\ednote{Double check, because the charge is not balanced}
 
-On exposure to oxygen, ascorbic acid will undergo further oxidative decomposition to
-various products including diketogulonic acid, xylonic acid, threonic acid and oxalic
+On exposure to Oxygen, Ascorbic acid will undergo further oxidative decomposition to
+various products including Diketogulonic acid, Xylonic acid, Threonic acid and Oxalic
 acid.
 
-Reactive oxygen species are damaging to animals and plants at the molecular level due to
+Reactive Oxygen species are damaging to animals and plants at the molecular level due to
 their possible interaction with nucleic acids, proteins, and lipids. Sometimes these
 radicals initiate chain reactions. Ascorbate can terminate these chain radical reactions
-by electron transfer. The oxidized forms of ascorbate are relatively unreactive and do not
+by electron transfer. The oxidized forms of Ascorbate are relatively unreactive and do not
 cause cellular damage.
 
-However, being a good electron donor, excess ascorbate in the presence of free metal ions
+However, being a good electron donor, excess Ascorbate in the presence of free metal ions
 can not only promote but also initiate free radical reactions, thus making it a
 potentially dangerous pro-oxidative compound in certain metabolic contexts.
 
@@ -490,19 +513,28 @@ This consists of a combination of dihydroxyacetone and glyceraldehyde.
 \section{Reactions}\label{sec_reactions}
 
 \subsection{ADP/ATP}
-Energy is released from $\mathit{ATP}$ by the following reaction splitting it into $ADP$ and a
-phosphate $PO_3^-$ group.
+Energy is released from $\mathit{ATP}$ by the following reaction splitting it into
+$\mathit{ADP}$ and a phosphate $PO_3^-$ group.
 \[
     {ATP}^{4-} + H_2O \leftrightarrow {ADP}^{3-} + {HPO_4}^{2-} + H^+
 \]
 Conversely, the opposite reaction is used to store energy, by adding a phosphate group to
-$ADP$ turning it into $\mathit{ATP}$.
+$\mathit{ADP}$ turning it into $\mathit{ATP}$.
+\ednote{Add value for $\Delta G$}
+
+\subsection{Glycolysis}
+\[
+    \begin{split}
+    C_6H_{12}O_6 + 2{NAD}^+ + 2{ADP}^{3-} + 2{HPO_4}^{2-} \rightarrow \\
+    2{C_3H_3O_3}^- + 2NADH + 2H^+ + 2{ATP}^{4-} + 2H_2O
+    \end{split}
+\]
 
 \subsection{Pyruvate decarboxylation}
 Pyruvate produced by glycolysis still contains a lot of reducing power (check each of its
-carbon atoms' oxidation state and compare it with carbon's oxidation state in $CO_2$). This
-reducing power will be harnessed by the cell through the citric acid cycle. First,
-Pyruvate is decarboxylated to Acetyl-CoA, an activated form of Acetate ($CH_3COO^-$):
+carbon atoms' oxidation state and compare it with carbon's oxidation state in $CO_2$).
+This reducing power will be harnessed by the cell through the Krebs cycle. First, Pyruvate
+is decarboxylated to Acetyl-CoA, an activated form of Acetate ($CH_3COO^-$):
 
 \[
     C_3H_3O_3^- + H{\mhyphen}SCoA + NAD^+ \rightarrow
@@ -510,12 +542,12 @@ Pyruvate is decarboxylated to Acetyl-CoA, an activated form of Acetate ($CH_3COO
 \]
 
 This reaction is catalyzed by Pyruvate Dehydrogenase, a very complex enzyme with several
-cofactors: lipoamide, FAD, and coenzyme-A. Thioester bond ($S{\mhyphen}C=O$) hydrolysis is very exergonic,
-and therfore its formation demands energy. That energy comes from Pyruvate decarboxylation
-(Pyruvate contains three carbon atoms, and the acetyl portion of acetyl-CoA only contains
-two; the carboxylate group left as $CO_2$). Energy from decarboxylations is often used by the
-cell to push an equilibrium towards product formation, as can be seen in several reactions
-in the citric acid cycle and gluconeogenesis.
+cofactors: lipoamide, FAD, and coenzyme-A. Thioester bond ($S{\mhyphen}C=O$) hydrolysis is
+very exergonic, and therefore its formation demands energy. That energy comes from
+Pyruvate decarboxylation (Pyruvate contains three Carbon atoms, and the Acetyl portion of
+acetyl-CoA only contains two; the carboxylate group left as $CO_2$). Energy from
+decarboxylations is often used by the cell to push an equilibrium towards product
+formation, as can be seen in several reactions in the Krebs cycle and gluconeogenesis.
 
 \subsection{The Krebs cycle}
 The overall result of the Krebs cycle is to split Acetyl-CoA into its constituents, i.e.\
@@ -526,14 +558,14 @@ net reaction:
     C_2H_3O{\mhyphen}SCoA + 3H_2O \rightarrow 2CO_2 + HSCoA + 8H
 \]
 $HS{\mhyphen}$ is a thiol group. It is similar to an alcohol group, because $S$ is similar to
-oxygen.
+Oxygen.
 
-In practice, the hydrogen atoms are split intro protons and electrons, by the following
+In practice, the Hydrogen atoms are split intro protons and electrons, by the following
 reaction
 \[
     NAD^+ + 2H \rightarrow NADH + H^+
 \]
-$NAD^+$ is oxidized, $NADH$ is reduced.
+$\mathit{NAD^+}$ is oxidized, $\mathit{NADH}$ is reduced.
 
 In the following I'll describe each step in the Krebs cycle, and finally give a summary of
 all the parts in the reaction.
@@ -578,7 +610,7 @@ This converts alpha-ketoglutarate into Succinyl-CoA.
 
 \subsubsection{Succinyl-CoA Synthetase}
 Like every thioester bond, the one present in succinyl-CoA is quite energetic. Its
-hydrolysis will be the only step in the citric acid cycle where direct production of
+hydrolysis will be the only step in the Krebs cycle where direct production of
 $\mathit{ATP}$ (or equivalent) occurs.
 \[
     C_4H_4O_3^{-}{\mhyphen}SCoA + GDP^{3-} + HPO_4^{2-} \leftrightarrow
@@ -589,15 +621,15 @@ This converts Succinyl-CoA into Succinate.
 The remaining steps are to convert the four-carbon molecule Succinate ($C_4H_4O_4^{2-}$)
 into the four-carbon molecule Oxaloacetate ($C_4H_2O_5^{2-}$). These remaining steps
 essentially add a water molecule $H_2O$ to bring in the missing oxygen, and then remove
-the excess hydrogen using $FAD$ and $NAD$.
+the excess hydrogen using $\mathit{FAD}$ and $\mathit{NAD}$.
 
-Succinate is first oxidized to
-Fumarate, by the Succinate Dehydrogenase Complex (also known as Complex II), which is
-present in the matrix side of the inner mitochondrial membrane. The redox potential of the
-oxidation of a C-C single bond to a C=C double bond (alkanes to alkenes) is too high to
-enable the involved electrons to be accepted by NAD+ ($E_0$=-320 mV). The cell will therefore
-use FAD ($E_0$= 0 mV) as electron acceptor. Fumarate hydration yields Malate, which can be
-oxidized to Oxaloacetate, thus closing the cycle.
+Succinate is first oxidized to Fumarate, by the Succinate Dehydrogenase Complex (also
+known as Complex II), which is present in the matrix side of the inner mitochondrial
+membrane. The redox potential of the oxidation of a C-C single bond to a C=C double bond
+(alkanes to alkenes) is too high to enable the involved electrons to be accepted by
+$\mathit{NAD^+}$ ($E_0$=-320 mV). The cell will therefore use $\mathit{FAD}$ ($E_0$= 0 mV)
+as electron acceptor. Fumarate hydration yields Malate, which can be oxidized to
+Oxaloacetate, thus closing the cycle.
 
 \subsubsection{Succinate Dehydrogenase}
 \[
@@ -635,29 +667,29 @@ from the Acetyl-CoA. So there is a re-shuffling of carbon atoms occurring in the
 cycle.
 
 \subsection{Oxidative Phosphorylation}
-This is also know as the electron transport chain.
-
-Basically, electrons are stripped from the food (glucose) and transported --- via $NADH$
-and $FADH_2$ --- to the cell membrane. Here, the electrons in a sequence of steps
-lose most of their energy, which is subsequently used to pump protons out through
-the cell wall (against the proton gradient) and finally the electrons are accepted by
-oxygen, which together with protons generate water:
+This is also known as the electron transport chain.  Basically, electrons are stripped
+from the food (Glucose) and transported --- via $\mathit{NADH}$ and $\mathit{FADH_2}$ ---
+to the cell membrane. Here, the electrons in a sequence of steps lose most of their
+energy, which is subsequently used to pump protons out through the cell wall (against the
+proton gradient) and finally the electrons are accepted by Oxygen, which together with
+protons generate water:
 
 \[
     4H^+ + O_2 + 4e^- \rightarrow 2H_2O
 \]
 
-The energy stored in the chemical bonds of glucose is released by the cell in the citric
-acid cycle producing carbon dioxide, and the energetic electron donors NADH and FADH\@.
-Oxidative phosphorylation uses these molecules and $O_2$ to produce ATP, which is used
-throughout the cell whenever energy is needed. During oxidative phosphorylation, electrons
-are transferred from the electron donors to a series of electron acceptors in a series of
-redox reactions ending in oxygen, whose reaction releases half of the total energy.
+The energy stored in the chemical bonds of Glucose is released by the cell in the Krebs
+cycle producing $CO_2$, and the energetic electron donors $\mathit{NADH}$ and
+$\mathit{FADH}$.  Oxidative phosphorylation uses these molecules and $O_2$ to produce
+$\mathit{ATP}$, which is used throughout the cell whenever energy is needed. During
+oxidative phosphorylation, electrons are transferred from the electron donors to a series
+of electron acceptors in a series of redox reactions ending in Oxygen, whose reaction
+releases half of the total energy.
 
 The flow of electrons through the electron transport chain is an exergonic process. The
 energy from the redox reactions creates an electrochemical proton gradient that drives the
 synthesis of adenosine triphosphate (ATP). In aerobic respiration, the flow of electrons
-terminates with molecular oxygen as the final electron acceptor. In anaerobic respiration,
+terminates with molecular Oxygen as the final electron acceptor. In anaerobic respiration,
 other electron acceptors are used, such as sulfate.
 
 In an electron transport chain, the redox reactions are driven by the difference in the
@@ -669,21 +701,20 @@ electrochemical gradient that drives the synthesis of ATP via coupling with oxid
 phosphorylation with ATP synthase.
 
 The energy released from one turn of the Krebs cycle is mainly stored in the reduced
-molecules $FADH_2$ and $NADH$, as well as $GTP$. So, later in the metabolic pathway, when
-these products are converted back into $FAD$, $NAD^+$, and $GDP$, this is where most of
-the energy is released.
+molecules $\mathit{FADH_2}$ and $\mathit{NADH}$, as well as $\mathit{GTP}$. So, later in
+the metabolic pathway, when these products are converted back into $\mathit{FAD}$,
+$\mathit{NAD^+}$, and $\mathit{GDP}$, this is where most of the energy is released.
 
-The Krebs cycle in itself does not require oxygen. However, replenishing $FAD$ and $NAD^+$
-from the reduced $FADH_2$ and $NADH$ is an oxidation process that requires electron
-acceptors such as oxygen.
+The Krebs cycle in itself does not require Oxygen. However, replenishing $\mathit{FAD}$
+and $\mathit{NAD^+}$ from the reduced $\mathit{FADH_2}$ and $\mathit{NADH}$ is an
+oxidation process that requires electron acceptors such as Oxygen.
 
 \subsubsection{NADH Dehydrogenase}
 This is also called ``Complex I'' or ``NADH/uniquinone oxidoreductase''.
 
-The reduced NADH will be oxidixed (thus losing its two extra electrons) and in turn
-the ubiqionone molecule will be reduced (and gaining the two electrons).
-In effect, two carbonyl groups ($=O$) are replaced by corresponding alcohol groups
-(${\mhyphen}OH$).
+The reduced $\mathit{NADH}$ will be oxidixed (thus losing its two extra electrons) and in
+turn the Ubiqionone molecule will be reduced (and gaining the two electrons).  In effect,
+two carbonyl groups ($=O$) are replaced by corresponding alcohol groups (${\mhyphen}OH$).
 
 \[
     Q + NADH + H^+ \rightarrow QH_2 + NAD^+
@@ -701,9 +732,10 @@ Succinate is converted in Fumarate via this reaction:
 \[
     C_4H_4O_4^{2-} + FAD \leftrightarrow C_4H_2O_4^{2-} + FADH_2
 \]
-In other words, Succinate is oxidized to Fumarate, and $FAD$ is reduced to $FADH_2$.
+In other words, Succinate is oxidized to Fumarate, and $\mathit{FAD}$ is reduced to
+$\mathit{FADH_2}$.
 
-Then $FADH_2$ is re-oxidized and returns the $H_2$ via this reaction:
+Then $\mathit{FADH_2}$ is re-oxidized and returns the $H_2$ via this reaction:
 \[
     Q + FADH_2 \rightarrow QH_2 + FAD
 \]
@@ -717,7 +749,7 @@ Ubiquinol ($QH_2$) has two electrons to give.
 \]
 
 First, one of these electrons is donated to another molecule of Uniquinone ($Q$), causing the
-formation of a benzene ring.  One oxygen becomes negatively charged, while the other
+formation of a benzene ring.  One Oxygen becomes negatively charged, while the other
 becomes a free radical, leading to a Semiquinone.
 \[
     Q + e^- \rightarrow {}^{\bullet}Q^{-}
@@ -752,7 +784,7 @@ The overall net result of this Q-cycle is the following:
 \subsubsection{Complex IV}
 This is also called ``Complex IV''.
 This reacts one molecule of oxygen ($O_2$) with four protons (from the matrix) and four
-electrons (from Cytochrome C) to give two molecules of water. The energy released
+electrons (from Cytochrome C) to give two molecules of $H_2O$. The energy released
 from this reaction is used to pump four protons into the inner membrane space.
 Overall, this can be written as:
 \[
@@ -763,17 +795,20 @@ chain is dependent on this step functioning.
 
 \subsubsection{Summary}
 The overall net result of the electron transport chain is to take the electrons from the
-reduced $NADH$ and $FADH_2$ and donate them to oxygen, thereby releasing a large amount of
-energy. The reaction is:
+reduced $\mathit{NADH}$ and $\mathit{FADH_2}$ and donate them to Oxygen, thereby releasing
+a large amount of energy. The reaction is:
 \[
     FADH_2 + NADH + H^+ + O_2 \rightarrow FAD + NAD^+ + 2H_2O
 \]
+\ednote{What is the $\Delta G$}
 The energy relased (from reducing oxygen) is used to pump up to twelve protons across the
 membrane (against the proton gradient).
 
+\pagebreak
+\section{Carbon Fixation}\label{sec_carbon_fixation}
 
 \subsection{Pyruvate Carboxylase}
-The following reaction converts pyruvate into oxaloacetate, and is catalyzed by Pyruvate
+The following reaction converts Pyruvate into Oxaloacetate, and is catalyzed by Pyruvate
 Carboxylase.
 \[
     {ATP}^{4-} + {C_3H_3O_3}^- + {HCO_3}^- \rightarrow
@@ -781,11 +816,11 @@ Carboxylase.
 \]
 
 \subsection{Methanogenesis}
-Methanogens are a type of archaea. They produce methane via the following net reaction:
+Methanogens are a type of archaea. They produce Methane via the following net reaction:
 \[
     CO_2 + 4H_2 \rightarrow CH_4 + 2H_2O
 \]
-This is an exothermic reaction, i.e.\ it produces energy. Funnily enough, the methane
+This is an exothermic reaction, i.e.\ it produces energy. Funnily enough, the Methane
 is here considered a waste product; it's the energy released by the reaction that is
 important.
 
@@ -828,27 +863,68 @@ But maybe the very first reaction is
 What is the thermodynamics of this reaction?
 And how do you get to formaldehyde (?) $CH_2O$?
 
-\subsection{Glycolysis}
+\href{https://en.wikipedia.org/wiki/Methanogenesis}{Methanogenesis}
+is the formation of Methane coupled to energy conservation by microbes known as
+methanogens. Organisms capable of producing Methane for energy conservation have been
+identified only from the domain Archaea, a group phylogenetically distinct from both
+eukaryotes and bacteria, although many live in close association with anaerobic bacteria.
+The production of Methane is an important and widespread form of microbial metabolism. In
+anoxic environments, it is the final step in the decomposition of biomass. Methanogenesis
+is responsible for significant amounts of natural gas accumulations, the remainder being
+thermogenic.
+
+Methanogenesis in microbes is a form of anaerobic respiration. Methanogens do not use
+Oxygen to respire; in fact, Oxygen inhibits the growth of methanogens. The terminal
+electron acceptor in methanogenesis is not Oxygen, but Carbon. The two best described
+pathways involve the use of Acetic acid or inorganic $CO_2$ as terminal electron
+acceptors:
 \[
-    \begin{split}
-    C_6H_{12}O_6 + 2{NAD}^+ + 2{ADP}^{3-} + 2{HPO_4}^{2-} \rightarrow \\
-    2{C_3H_3O_3}^- + 2NADH + 2H^+ + 2{ATP}^{4-} + 2H_2O
-    \end{split}
+    CO_2 + 4 H_2 \rightarrow CH_4 + 2 H_2O
+\]
+\[
+    CH_3COOH \rightarrow CH_4 + CO_2
 \]
 
+Methanogenesis is the final step in the decay of organic matter. During the decay process,
+electron acceptors (such as Oxygen, ferric iron, Sulfate, and Nitrate) become depleted,
+while Hydrogen ($H_2$) and $CO_2$ accumulate. Light organics produced by fermentation
+also accumulate. During advanced stages of organic decay, all electron acceptors become
+depleted except $CO_2$. $CO_2$ is a product of most catabolic processes,
+so it is not depleted like other potential electron acceptors.
+
+Only methanogenesis and fermentation can occur in the absence of electron acceptors other
+than Carbon. Fermentation only allows the breakdown of larger organic compounds, and
+produces small organic compounds. Methanogenesis effectively removes the semi-final
+products of decay: Hydrogen, small organics, and $CO_2$. Without methanogenesis, a
+great deal of Carbon (in the form of fermentation products) would accumulate in anaerobic
+environments.
+
 \subsection{Reverse Krebs cycle}
+
+There are three enzymes specific to the Reverse Krebs cycle (also called reductive Krebs
+cycle): citrate lyase, fumarate reductase, and alpha-ketoglutarate synthase.
+
+The splitting of citric acid to oxaloacetate and acetate is catalyzed by citrate lyase,
+rather than the reverse reaction of citrate synthase. Succinate dehydrogenase is
+replaced by fumarate reductase and alpha-ketoglutarate synthase replaces alpha-ketoglutarate
+dehydrogenase.
+
+The conversion of succinate to 2-oxoglutarate is also different. In the oxidative reaction
+this step is coupled to the reduction of NADH\@. However, the oxidation of 2-oxoglutarate to
+succinate is so energetically favorable, that NADH lacks the reductive power to drive the
+reverse reaction. In the reverse Krebs cycle, this reaction has to use a reduced low potential
+\href{https://en.wikipedia.org/wiki/Ferredoxin}{ferredoxin}.
+
 \href{https://en.wikipedia.org/wiki/Biological_carbon_fixation}{The reverse Krebs cycle},
-also known as reverse TCA cycle (rTCA) or reductive citric acid
-cycle, is an alternative to the standard Calvin-Benson cycle for carbon fixation. It has
-been found in strict anaerobic or microaerobic bacteria (as Aquificales) and anaerobic
-archea. It was discovered by Evans, Buchanan and Arnon in 1966 working with the
-photosynthetic green sulfur bacterium Chlorobium limicola. In particular, it is one of
-the most used pathways in hydrothermal vents by the Campylobacterota. This feature is
-very important in oceans. Without it, there would be no primary production in aphotic
+also known as reverse TCA cycle (rTCA) or reductive citric acid cycle, is an alternative
+to the standard Calvin-Benson cycle for carbon fixation. It has been found in strict
+anaerobic or microaerobic bacteria (as Aquificales) and anaerobic archea.  It is one of
+the most used pathways in hydrothermal vents by the Campylobacterota. This feature is very
+important in oceans. Without it, there would be no primary production in aphotic
 environments, which would lead to habitats without life. So this kind of primary
 production is called ``dark primary production''.
 
-The cycle involves the biosynthesis of acetyl-CoA from two molecules of $CO_2$. The key
+The cycle involves the biosynthesis of Acetyl-CoA from two molecules of $CO_2$. The key
 steps of the reverse Krebs cycle are:
 
 \begin{itemize}
@@ -879,7 +955,7 @@ to the rTCA cycle in response to concentrations of $H_2S$.
 \href{https://en.wikipedia.org/wiki/Wood-Ljungdahl_pathway}{The Wood-Ljungdahl pathway} is
 a set of biochemical reactions used by some bacteria. It is
 also known as the reductive acetyl-coenzyme-A (Acetyl-CoA) pathway. This pathway
-enables these organisms to use hydrogen as an electron donor, and carbon dioxide as an
+enables these organisms to use hydrogen as an electron donor, and $CO_2$ as an
 electron acceptor and as a building block for biosynthesis.
 
 \subsection{Anaerobic respiration}
@@ -891,61 +967,21 @@ transport chain.
 In aerobic organisms undergoing respiration, electrons are shuttled to an electron
 transport chain, and the final electron acceptor is oxygen. Molecular oxygen is an
 excellent electron acceptor. Anaerobes instead use less-oxidizing substances such as
-nitrate ($NO_3^-$), fumarate ($C_4H_2O_4^{2-}$), sulfate ($SO_4^{2-}$), or elemental
+Nitrate ($NO_3^-$), Fumarate ($C_4H_2O_4^{2-}$), Sulfate ($SO_4^{2-}$), or elemental
 sulfur ($S$). These terminal electron acceptors have smaller reduction potentials than
 $O_2$.  Less energy per oxidized molecule is released. Therefore, anaerobic respiration is
 less efficient than aerobic.
 
-\subsection{Methanogenesis}
-\href{https://en.wikipedia.org/wiki/Methanogenesis}{Methanogenesis}
-is the formation of methane coupled to energy conservation by microbes known as
-methanogens. Organisms capable of producing methane for energy conservation have been
-identified only from the domain Archaea, a group phylogenetically distinct from both
-eukaryotes and bacteria, although many live in close association with anaerobic bacteria.
-The production of methane is an important and widespread form of microbial metabolism. In
-anoxic environments, it is the final step in the decomposition of biomass. Methanogenesis
-is responsible for significant amounts of natural gas accumulations, the remainder being
-thermogenic.
-
-Methanogenesis in microbes is a form of anaerobic respiration. Methanogens do not use
-oxygen to respire; in fact, oxygen inhibits the growth of methanogens. The terminal
-electron acceptor in methanogenesis is not oxygen, but carbon. The two best described
-pathways involve the use of acetic acid or inorganic carbon dioxide as terminal electron
-acceptors:
-\[
-    CO_2 + 4 H_2 \rightarrow CH_4 + 2 H_2O
-\]
-\[
-    CH_3COOH \rightarrow CH_4 + CO_2
-\]
-
-Methanogenesis is the final step in the decay of organic matter. During the decay process,
-electron acceptors (such as oxygen, ferric iron, sulfate, and nitrate) become depleted,
-while hydrogen ($H_2$) and carbon dioxide accumulate. Light organics produced by fermentation
-also accumulate. During advanced stages of organic decay, all electron acceptors become
-depleted except carbon dioxide. Carbon dioxide is a product of most catabolic processes,
-so it is not depleted like other potential electron acceptors.
-
-Only methanogenesis and fermentation can occur in the absence of electron acceptors other
-than carbon. Fermentation only allows the breakdown of larger organic compounds, and
-produces small organic compounds. Methanogenesis effectively removes the semi-final
-products of decay: hydrogen, small organics, and carbon dioxide. Without methanogenesis, a
-great deal of carbon (in the form of fermentation products) would accumulate in anaerobic
-environments.
-
 \subsection{Ferredoxin}
 \href{https://en.wikipedia.org/wiki/Ferredoxin}{Ferredoxin}
 are iron–sulfur proteins that mediate electron transfer in a range of metabolic reactions.
-The term ``ferredoxin'' was coined by D.C. Wharton of the DuPont Co.\ and applied to the
-``iron protein'' first purified in 1962 by Mortenson, Valentine, and Carnahan from the
-anaerobic bacterium Clostridium pasteurianum.
 
 Another redox protein, isolated from spinach chloroplasts, was termed ``chloroplast
 ferredoxin''. The chloroplast ferredoxin is involved in both cyclic and non-cyclic
 photophosphorylation reactions of photosynthesis. In non-cyclic photophosphorylation,
-ferredoxin is the last electron acceptor thus reducing the enzyme $NADP^+$ reductase. It
-accepts electrons produced from sunlight-excited chlorophyll and transfers them to the
-enzyme ferredoxin: $NADP^+$ oxidoreductase.
+ferredoxin is the last electron acceptor thus reducing the enzyme $\mathit{NADP^+}$
+reductase. It accepts electrons produced from sunlight-excited chlorophyll and transfers
+them to the enzyme ferredoxin: $\mathit{NADP^+}$ oxidoreductase.
 
 Ferredoxins are small proteins containing iron and sulfur atoms organized as iron–sulfur
 clusters. These biological ``capacitors'' can accept or discharge electrons, with the
@@ -974,23 +1010,23 @@ ferredoxin.
 
 \subsubsection{Direct reduction}
 Reactions that reduce Fd include the oxidation of aldehydes to acids like the
-glyceraldehyde to glycerate reaction (-580 mV), the carbon monoxide dehydrogenase reaction
+Glyceraldehyde to Glycerate reaction (-580 mV), the carbon monoxide dehydrogenase reaction
 (-520 mV), and the 2-oxoacid:Fd Oxidoreductase reactions (-500 mV) like the
-reaction carried out by pyruvate synthase.
+reaction carried out by Pyruvate synthase.
 
 \subsubsection{Membrane potential coupled reduction}
-Ferredoxin can also be reduced by using NADH (-320
-mV) or H 2 (-414 mV), but these processes are coupled to the consumption of the membrane
-potential to power the ``boosting'' of electrons to the higher energy state. The Rnf
-complex is a widespread membrane protein in bacteria that reversibly transfers electrons
-between NADH and ferredoxin while pumping Na+ or H+ ions across the membrane. The
-chemiosmotic potential of the membrane is consumed to power the unfavorable reduction of
-$Fd ox$ by NADH\@. This reaction is an essential source of $Fd_{red}^-$ in many autotrophic
+Ferredoxin can also be reduced by using NADH (-320 mV) or $H_2$ (-414 mV), but these
+processes are coupled to the consumption of the membrane potential to power the
+``boosting'' of electrons to the higher energy state. The Rnf complex is a widespread
+membrane protein in bacteria that reversibly transfers electrons between $\mathit{NADH}$
+and ferredoxin while pumping $Na^+$ or $H^+$ ions across the membrane. The chemiosmotic
+potential of the membrane is consumed to power the unfavorable reduction of $Fd ox$ by
+$\mathit{NADH}$. This reaction is an essential source of $Fd_{red}^-$ in many autotrophic
 organisms. If the cell is growing on substrates that provide excess $Fd_{red}^-$, the Rnf
-complex can transfer these electrons to NAD+ and store the resultant energy in the
-membrane potential. The energy converting hydrogenases (Ech) are a family of enzymes
-that reversibly couple the transfer of electrons between $Fd$ and $H_2$ while pumping $H^+$ ions
-across the membrane to balance the energy difference.
+complex can transfer these electrons to $\mathit{NAD^+}$ and store the resultant energy in
+the membrane potential. The energy converting hydrogenases (Ech) are a family of enzymes
+that reversibly couple the transfer of electrons between $Fd$ and $H_2$ while pumping
+$H^+$ ions across the membrane to balance the energy difference.
 
 \[
     Fd_{ox}^0 + NADH + Na_{outside}^+ \leftrightarrow Fd_{red}^{2-} + NAD^+ + Na_{inside}^+
