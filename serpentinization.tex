@@ -52,7 +52,7 @@ oxygen being shared between two Silicate atoms. The overall chemical composition
 Olivine is not stable on the surface and will (over geological time scales) spontaneously react with e.g.\ carbondioxide
 in the following exothermic reaction:
 \[
-    \Mg_2\Si\O_4 + 2\,\C\O_2 \rightarrow 2\,\Mg\C\O_3 + \Si\O_2 + 90\, {\rm kJ/mole},
+    \Mg_2\Si\O_4 + 2\,\C\O_2 \rightarrow 2\,\Mg\C\O_3 + \Si\O_2 + 90\, {\rm kJ / mole},
 \]
 where Fosterite decomposes to Magnesite and Silica.
 
@@ -63,14 +63,46 @@ water that produces hydrogen gas (and serpentinite).
 \[
     3\, \Fe^{\II}_2\Si \O_4 + 2\,\H_2\O \rightarrow 2\,\Fe^{\III}_3\O_4 + 3\,\Si \O_2 + 2\,\H_2
 \]
-
-It is based on the Schikorr reaction\cite{schikorr_reaction}
+It is based on the Schikorr reaction\cite{schikorr_reaction} where ferrous hydroxide is converted into magnetite and
+water and hydrogen:
 \[
     3\, \Fe{(\O\H)}_2 \rightarrow \Fe_3\O_4 + 2\,\H_2\O + \H_2
 \]
-which in turn is based on Iron (II,III) oxide\cite{iron_ii_iii_oxide}
+The Schikorr reaction can be viewed as two distinct processes:
+
+\begin{itemize}
+    \item
+The oxidation of $\Fe^{\II}$ into $\Fe^{\III}$ and associated reduction of water:
 \[
-    \Fe^{\II}\O + \Fe_2^{\III}\O_3 \rightarrow \Fe_3\O_4
+    2\, \Fe^{2+} + 2\, \H_2\O \rightarrow 2\, \Fe^{3+} + \H_2 + 2\O\H^-,
+\]
+which can be rewritten as
+\[
+    3\, \Fe^{\II}{(\O\H)}_2 + 2\, \H_2\O \rightarrow \Fe^{\II}{(\O\H)}_2 + 2\, \Fe^{\III}{(\O\H)}_3 + \H_2
+\]
+
+    \item
+        Autoprotolysis of water
+\[
+    2\, \O\H^- \rightarrow \O^{2-} + \H_2\O
+\]
+leads to dehydration of ferrous and ferric hydroxide:
+\[
+    \Fe^{\II}{(\O\H)}_2 \rightarrow \Fe^{\II}\O + \H_2\O
+\]
+and
+\[
+    2\,\Fe^{\III}{(\O\H)}_3 \rightarrow \Fe^{\III}_2\O_3 + 3\,\H_2\O
+\]
+\end{itemize}
+Combining everything gives
+\[
+    3\, \Fe^{\II}{(\O\H)}_2 \rightarrow \Fe^{\II}\O + \Fe^{\III}_2\O_3 + 2\,\H_2\O + \H_2
+\]
+Finally, the two iron oxides combine as follows to form Iron (II,III) oxide\cite{iron_ii_iii_oxide} also known as
+magnetite:
+\[
+    \Fe^{\II}\O + \Fe_2^{\III}\O_3 \rightarrow \Fe^{\II}\Fe^{\III}_2\O_4
 \]
 
 
