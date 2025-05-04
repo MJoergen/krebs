@@ -1,0 +1,92 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{chemfig}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[show]{ed}
+\def\mhyphen{{\hbox{-}}}
+\def\H{{\rm H}}
+\def\O{{\rm O}}
+\def\M{{\rm M}}
+\def\C{{\rm C}}
+\def\Ca{{\rm Ca}}
+\def\Fe{{\rm Fe}}
+\def\Mg{{\rm Mg}}
+\def\Mn{{\rm Mn}}
+\def\Ni{{\rm Ni}}
+\def\Si{{\rm Si}}
+\def\II{{\rm II}}
+\def\III{{\rm III}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+Olivine\cite{olivine} is a very abundant group of minerals (neso-silicates\cite{orthosilicate}) (present in Mafic rock,
+e.g. Basalt) of the form
+\[
+    \M_2\Si\O_4,
+\]
+where $\M$ is one of the following metal divalent cations (group 2 of the periodic table).  The
+elements and their associated mineral name are:
+\begin{itemize}
+    \itemsep=0em
+    \item\Mg: Fosterite (also known as Peridot or Chrysolite). Melting point ca. $1900\ {}^\circ\C$.
+    \item$\Fe^{\II}$: Fayalite. Melting point ca. $1200\ {}^\circ\C$.
+    \item$\Mn^{\II}$: Tephroite
+\end{itemize}
+Mafic\cite{mafic} rock is a form of igneous rock (i.e.\ formed from lava) that contains combinations of Fosterite and Fayalite in
+various proportions.  Only $\Fe^{\II}$ ions can form olivine, $\Fe^{\III}$ ions cannot.
+
+As a comparison, $\H_4\Si\O_4$ (also known as $\Si{(\O\H)}_4$) is a form of Hydrated Silica\cite{hydrated_silica} formed
+by the reaction
+\[
+    \Si\O_2 + 2\, \H_2\O \rightarrow \H_4\Si\O_4
+\]
+The mineral Quartz\cite{quartz} consists of a framework of Silicate atoms $\Si\O_4$ in a tetrahedal structure with each
+oxygen being shared between two Silicate atoms. The overall chemical composition of Quartz is therefore $\Si\O_2$.
+
+
+\section{Weathering}
+Olivine is not stable on the surface and will (over geological time scales) spontaneously react with e.g.\ carbondioxide
+in the following exothermic reaction:
+\[
+    \Mg_2\Si\O_4 + 2\,\C\O_2 \rightarrow 2\,\Mg\C\O_3 + \Si\O_2 + 90\, {\rm kJ/mole},
+\]
+where Fosterite decomposes to Magnesite and Silica.
+
+\section{Serpentinization}
+
+Serpentinization\cite{serpentinization} is a reaction between rock (e.g.\ ferromagnesian minerals such as Olivine) and
+water that produces hydrogen gas (and serpentinite).
+\[
+    3\, \Fe^{\II}_2\Si \O_4 + 2\,\H_2\O \rightarrow 2\,\Fe^{\III}_3\O_4 + 3\,\Si \O_2 + 2\,\H_2
+\]
+
+It is based on the Schikorr reaction\cite{schikorr_reaction}
+\[
+    3\, \Fe{(\O\H)}_2 \rightarrow \Fe_3\O_4 + 2\,\H_2\O + \H_2
+\]
+which in turn is based on Iron (II,III) oxide\cite{iron_ii_iii_oxide}
+\[
+    \Fe^{\II}\O + \Fe_2^{\III}\O_3 \rightarrow \Fe_3\O_4
+\]
+
+
+
+
+
+\begin{thebibliography}{9}
+    \bibitem{olivine}           \href{https://en.wikipedia.org/wiki/Olivine}{Olivine}
+    \bibitem{orthosilicate}     \href{https://en.wikipedia.org/wiki/Orthosilicate}{Orthosilicate}
+    \bibitem{mafic}             \href{https://en.wikipedia.org/wiki/Mafic}{Mafic}
+    \bibitem{hydrated_silica}   \href{https://en.wikipedia.org/wiki/Hydrated_silica}{Hydrated Silica}
+    \bibitem{quartz}            \href{https://en.wikipedia.org/wiki/Quartz}{Quartz}
+    \bibitem{serpentinization}  \href{https://en.wikipedia.org/wiki/Serpentinization}{Serpentinization}
+    \bibitem{schikorr_reaction} \href{https://en.wikipedia.org/wiki/Schikorr_reaction}{Schikorr reaction}
+    \bibitem{iron_ii_iii_oxide} \href{https://en.wikipedia.org/wiki/Iron(II,III)_oxide}{Iron (II,III) oxide}
+\end{thebibliography}
+
+\end{document}
+

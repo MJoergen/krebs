@@ -4,3 +4,5 @@
 *.pdf
 /intro.fdb_latexmk
 /intro.fls
+/serpentinization.fdb_latexmk
+/serpentinization.fls
