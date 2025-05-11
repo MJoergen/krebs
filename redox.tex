@@ -1,0 +1,86 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{chemfig}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[show]{ed}
+\def\mhyphen{{\hbox{-}}}
+\def\H{{\rm H}}
+\def\O{{\rm O}}
+\def\M{{\rm M}}
+\def\C{{\rm C}}
+\def\Ca{{\rm Ca}}
+\def\Fe{{\rm Fe}}
+\def\Mg{{\rm Mg}}
+\def\Mn{{\rm Mn}}
+\def\Ni{{\rm Ni}}
+\def\Si{{\rm Si}}
+\def\II{{\rm II}}
+\def\III{{\rm III}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+This is about energy calculations in Redox reactions.
+The following are the ``Standard Enthalpy of Formation'' and ``Standard Entropy'' of
+various compounds. Units are SI, i.e. $\text{kJ}/\text{mol}$ and $\text{J}/(\text{mol}\cdot \text{K})$.
+Source of data is~\cite{nist}.
+
+\[
+\begin{array}{rrr}
+    \text{Name}      & \text{Enthalpy} & \text{Entropy} \\
+   \midrule
+ \C_2\H_4\O_2 \,(l)  &  -483.52 & 158.00  \\
+ \C\H_2\O_2 \,(l)    &  -425.09 & 131.84  \\
+ \C\H_4 \,(g)        &   -74.60 & 186.25  \\
+ \C\O_2 \,(g)        &  -393.52 & 213.79  \\
+ \C\O \,(g)          &  -110.53 & 197.66  \\
+ \Fe_2\O_3 \,(s)     &  -825.50 &  87.42  \\
+ \Fe_3\O_4 \,(s)     & -1120.89 & 145.30  \\
+ \Fe{(\O\H)}_2 \,(s) &  -574.04 &  87.93  \\
+ \Fe\O \,(s)         &  -272.04 &  60.75  \\
+ \H_2\O \,(l)        &  -285.83 &  69.95  \\
+ \Mg_2\Si\O_4 \,(s)  & -2176.94 &  94.96  \\
+ \Mg\C\O_3 \,(s)     & -1111.69 &  65.84  \\
+ \Mg{(\O\H)}_2 \,(s) &  -924.66 &  63.18  \\
+ \Si\O_2 \,(g)       &  -910.86 &  41.47  \\
+ \H_2 \,(g)          &          & 130.68  \\
+ \O_2 \,(g)          &          & 205.15
+\end{array}
+\]
+
+\section{Example}
+
+Consider the reaction
+\[
+    2 \,\H_2 \,(g) + \O_2 \,(g) \rightarrow 2 \,\H_2\O \,(l).
+\]
+We find in the table that
+\[
+    \begin{array}{rcl}
+        \Delta H &=& 2 \cdot -285.83 = -571.66 \,\text{kJ}/\text{mol} \\
+        \Delta S &=& 2 \cdot 69.95 - 2 \cdot 130.68 - 205.15 = -326.61 \,\text{J}/(\text{mol}\cdot \text{K}).
+    \end{array}
+\]
+From here we get (using $T = 300 \,\text{K} = 0.3 \,\text{kK}$)
+\[
+    \Delta G = -571.66 - 0.3 \cdot (-326.61) = -473.7 \,\text{kJ}/\text{mol}.
+\]
+So each mole of water generated releases half that amount, i.e. $237 \,\text{kJ}$ of energy.
+
+\begin{thebibliography}{9}
+    \bibitem{nist}              \href{https://webbook.nist.gov/}{NIST Chemistry WebBook}
+    \bibitem{olivine}           \href{https://en.wikipedia.org/wiki/Olivine}{Olivine}
+    \bibitem{orthosilicate}     \href{https://en.wikipedia.org/wiki/Orthosilicate}{Orthosilicate}
+    \bibitem{mafic}             \href{https://en.wikipedia.org/wiki/Mafic}{Mafic}
+    \bibitem{hydrated_silica}   \href{https://en.wikipedia.org/wiki/Hydrated_silica}{Hydrated Silica}
+    \bibitem{quartz}            \href{https://en.wikipedia.org/wiki/Quartz}{Quartz}
+    \bibitem{serpentinization}  \href{https://en.wikipedia.org/wiki/Serpentinization}{Serpentinization}
+    \bibitem{schikorr_reaction} \href{https://en.wikipedia.org/wiki/Schikorr_reaction}{Schikorr reaction}
+    \bibitem{iron_ii_iii_oxide} \href{https://en.wikipedia.org/wiki/Iron(II,III)_oxide}{Iron (II,III) oxide}
+\end{thebibliography}
+
+\end{document}
+

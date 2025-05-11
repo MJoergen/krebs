@@ -1,5 +1,5 @@
-all: intro.pdf serpentinization.pdf
-	xdg-open serpentinization.pdf
+all: intro.pdf serpentinization.pdf redox.pdf
+	xdg-open redox.pdf
 
 intro.pdf: intro.tex
 	latexmk intro
@@ -7,4 +7,7 @@ intro.pdf: intro.tex
 #
 serpentinization.pdf: serpentinization.tex
 	latexmk serpentinization
+
+redox.pdf: redox.tex
+	latexmk redox
 
