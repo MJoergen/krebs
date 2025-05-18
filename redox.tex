@@ -5,6 +5,7 @@
 \usepackage{booktabs}
 \usepackage[show]{ed}
 \def\mhyphen{{\hbox{-}}}
+\def\Al{{\rm Al}}
 \def\H{{\rm H}}
 \def\O{{\rm O}}
 \def\M{{\rm M}}
@@ -40,6 +41,7 @@ Source of data is~\cite{nist}.
     \Fe_2\O_3 \,(s)     &  -825.50 &  87.42  &  -851.7 \\
     \Fe_3\O_4 \,(s)     & -1120.89 & 145.30  & -1164.5 \\
     \Fe{(\O\H)}_2 \,(s) &  -574.04 &  87.93  &  -600.4 \\
+    \Fe{(\O\H)}_3 \,(s) &  -832.62 & 104.56  &  -864.0 \\
     \Fe\O \,(s)         &  -272.04 &  60.75  &  -290.3 \\
     \H_2\O \,(l)        &  -285.83 &  69.95  &  -306.8 \\
     \H_2\O \,(g)        &  -241.83 & 188.84  &  -298.5 \\
@@ -51,6 +53,8 @@ Source of data is~\cite{nist}.
     \O_2 \,(g)          &          & 205.15  &   -61.5
 \end{array}
 \]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Example}
 
@@ -85,6 +89,116 @@ and
     \Delta G = 130.5 + 298.5 - 169.8 - 3\cdot 39.2 = 142 \,\text{kJ}/\text{mol}.
 \]
 So this reaction is endothermic.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Iron}
+Iron, like Sulfur and Manganese, occurs in more than one oxidation state and therefore forms a variety of different
+oxides.  Iron thus exists as native Iron, ferrous Iron ($\Fe^{\II}$) and ferric Iron ($\Fe^{\III}$).
+
+The oxides of Iron are:
+
+\begin{itemize}
+    \item Iron (III) oxide: $\Fe_2\O_3$, aka Hematite.
+    \item Iron (II,III) oxide: $\Fe_3\O_4$, aka Magnetite.
+    \item Iron (II) oxide: $\Fe\O$, aka Wüstite.
+    \item Iron (II) hydroxide: $\Fe{(\O\H)}_2$.
+    \item Iron (III) hydroxide: $\Fe{(\O\H)}_3$, aka Limonite or Goethite.
+\end{itemize}
+
+\subsection{Iron (III) oxide}
+This is also known as ``ferric oxide'' and has the stoichiometric formula $\Fe^{\III}_2\O_3$.
+The crystalline structure $\alpha\mhyphen\Fe_2\O_3 $ occurs naturally as the mineral Hematite.
+Its hydrated form, i.e.\ hydrous ferric oxide is often called rust.
+
+\[
+    \Fe^\III_2\O_3 \cdot \H_2\O
+\]
+
+\subsubsection{Thermite}
+\[
+    2\,\Al + \Fe_2\O_3 \rightarrow 2 \, \Fe + \Al_2\O_3
+\]
+
+\subsection{Iron (II,III) oxide}
+This is magnetite and has the chemical composition
+$\Fe^{\II}\O\cdot\Fe^{\III}_2\O_3$.
+
+\subsection{Iron (II) oxide}
+Iron (II) oxide, aka ferrous oxide, has the chemical composition $\Fe^{\II}\O$ also known as wüstite.
+
+It may be generated from magnetite in the following reaction:
+\[
+    \Fe^\II\O\cdot\Fe^\III_2\O_3 + \C \rightarrow 3\,\Fe^\II\O + \C\O
+\]
+where Iron is reduced (from +3 to +2) and Carbon is oxidized (from 0 to +2).
+
+The following decomposition reaction is exothermic.
+\[
+    4\,\Fe^\II\O \rightarrow \Fe + \Fe_3\O_4
+\]
+In this reaction, one iron atom is reduced twice (from +2 to 0), while two other iron atoms are oxidixed (from +2 to
++3).
+
+\subsection{Iron (II) hydroxide}
+Iron (II) hydroxide, aka ferrous hydroxide, is a crystal with the chemical formula $\Fe{(\O\H)}_2$.
+
+The Schikorr reaction is
+\[
+    3 \,\Fe {(\O\H)}_2 \rightarrow \Fe_3\O_4 + \H_2 + 2\,\H_2\O
+\]
+where ferrous hydroxide (in anaerobic conditions) is oxidized by the protons of water to form magnetite (iron (II,III)
+oxide).
+
+\subsection{Iron (III) oxide-hydroxide}
+Iron (III) oxide-hydroxide, aka ferric oxyhydroxide, has the formula $\Fe^\III\O(\O\H)$. The monohydrated form
+$\Fe^\III\O(\O\H)\cdot \H_2\O$ is often abbreviated as $\Fe^\III{(\O\H)}_3$. This is one form of rust, the other being
+Iron (III) oxide.
+
+It is formed when Iron (II) hydroxide is exposed to air:
+\[
+    4 \,\Fe^\II{(\O\H)}_2 + \O_2 \rightarrow 4 \,\Fe^\III\O(\O\H) + 2 \,\H_2\O
+\]
+Here Iron is oxidized (from +2 to +3) and Oxygen is reduced (from 0 to -2).
+
+\subsection{Redox buffer}
+Magnetite and Hematite combine to form a redox buffer:
+\[
+    4 \,\Fe_3\O_4 + \O_2 \leftrightarrow 6\, \Fe_2\O_3
+\]
+where Iron is oxidized (from +2 to +3) and Oxygen is reduced (from 0 to -2).
+
+Wüstite and Magnetite combine to form this redox buffer:
+\[
+    6 \,\Fe\O + \O_2 \leftrightarrow 2\,\Fe_3\O_4,
+\]
+where again Iron is oxidized (from +2 to +3) and Oxygen is reduced (from 0 to -2).
+
+Fayalite and Magnetite combine to form this redox buffer:
+\[
+    3 \,\Fe_2\Si\O_4 + \O_2 \leftrightarrow 2 \,\Fe_3\O_4 + 3 \,\Si\O_2
+\]
+where yet again Iron is oxidized (from +2 to +3) and Oxygen is reduced (from 0 to -2).
+
+\subsection{Iron furnace}
+To extract iron, one starts with iron ore containing the naturally occurring mineral hematite ($\Fe_2\O_3$). The iron
+atoms in the mineral must be reduced (from +3 to 0) and we therefore add Carbon as a reducing agent. However, pure Carbon is not
+strong enough as a reducing agent, so we first convert it into Carbon Monoxide in a two-step process:
+\[
+    \C\,(s) + \O_2\,(g) \rightarrow \C\O_2\,(g)
+\]
+and
+\[
+    \C\O_2\,(g) + \C\,(s) \rightarrow 2\,\C\O\,(g)
+\]
+The Carbon Monoxide is a much strong reducing agent. Both of the above reactions are exothermic and supply much the heat
+necessary for the next reaction.
+
+The main redox reaction is
+\[
+    \Fe_2\O_3\,(s) + 3\,\C\O\,(g) \rightarrow 2\,\Fe\,(l) + 3\,\C\O_2\,(g)
+\]
+where Iron is reduced from +3 to 0 and Carbon is oxidized from +2 to +4.
 
 \begin{thebibliography}{9}
     \bibitem{nist}              \href{https://webbook.nist.gov/}{NIST Chemistry WebBook}
