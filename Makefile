@@ -1,5 +1,5 @@
-all: intro.pdf serpentinization.pdf redox.pdf
-	xdg-open redox.pdf
+all: intro.pdf serpentinization.pdf redox.pdf photosynthesis.pdf
+	xdg-open photosynthesis.pdf
 
 intro.pdf: intro.tex
 	latexmk intro
@@ -10,4 +10,7 @@ serpentinization.pdf: serpentinization.tex
 
 redox.pdf: redox.tex
 	latexmk redox
+
+photosynthesis.pdf: photosynthesis.tex
+	latexmk photosynthesis
 

@@ -1,0 +1,103 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{chemfig}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[show]{ed}
+\def\mhyphen{{\hbox{-}}}
+\def\Al{{\rm Al}}
+\def\H{{\rm H}}
+\def\O{{\rm O}}
+\def\M{{\rm M}}
+\def\N{{\rm N}}
+\def\C{{\rm C}}
+\def\Ca{{\rm Ca}}
+\def\Fe{{\rm Fe}}
+\def\Mg{{\rm Mg}}
+\def\Mn{{\rm Mn}}
+\def\Ni{{\rm Ni}}
+\def\S{{\rm S}}
+\def\Si{{\rm Si}}
+\def\II{{\rm II}}
+\def\III{{\rm III}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+Photosynthesis needs a source of Hydrogen gas.
+Photosynthesis proceeds in two steps:
+\begin{enumerate}
+    \item Generate Hydrogen gas from some Hydrogen source, possibly using light as a helper.
+    \item React Hydrogen gas with $\C\O_2$ to generate organic molecules.
+\end{enumerate}
+The first part requires two things:
+\begin{itemize}
+    \item A Hydrogen source, e.g. $\H_2\O$ or $\H_2\S$.
+    \item An energy source.
+    \item An electron source?
+\end{itemize}
+This is achieved with Chlorophyll.
+
+The second part is achieved with Rubisco as a catalyst.
+
+\section{Chlorophyll}
+
+Chlorophyll acts like a catalyst; it absorns photons at around 680 nm.
+
+Some possible reactions
+\[
+    \H_2 + \C\O_2 + \text{energy} \rightarrow \C\H_2\O_2
+\]
+and
+\[
+    2\,\H_2\O + \C\O_2 + \text{energy} \rightarrow \H_2\O + \C\H_2\O + \O_2
+\]
+and
+\[
+    2\,\H_2\S + \C\O_2 + \text{energy} \rightarrow \H_2\O + \C\H_2\O + 2\,\S
+\]
+The last equation above likely came first in evolution. It requires less energy (about 2/3) to split $\H_2\S$
+than to split $\H_2\O$.
+
+So early evolution used Hydrogen Sulfide $\H_2\S$ as the source of Hydrogen, and only later did
+cells evolve the capacity to split Water $\H_2\O$. The latter is abundant and therefore presented a huge advantage.
+
+However, splitting of water (and in general any harvesting of photons) is very powerful machinery. The photons
+can potentially split anything.
+
+Ferri-cyanide $\Fe{(\C\N)}_6^{3-}$ can be used instead of $\C\O_2$.
+
+\section{Electron Transport Chain}
+\[
+    \text{Chlorophyll} + \text{energy} \rightarrow \text{Chlorophyll}^+ + e^-
+\]
+
+The electron $e^-$ moves from compounds with low redox potential to high potential. During this process
+the excited electron facilitates the generation of ADP.\@
+
+The excited Chlorophyll reacts with (i.e.\ steals electrons from) water.
+In other words, the water molecule $\H_2\O$ acts as an electron donor.
+
+This is known as the Z-scheme.
+
+\section{Rubisco}
+\[
+    \H^+ + e^- \rightarrow \H {}
+\]
+
+\begin{thebibliography}{9}
+    \bibitem{nist}              \href{https://webbook.nist.gov/}{NIST Chemistry WebBook}
+    \bibitem{olivine}           \href{https://en.wikipedia.org/wiki/Olivine}{Olivine}
+    \bibitem{orthosilicate}     \href{https://en.wikipedia.org/wiki/Orthosilicate}{Orthosilicate}
+    \bibitem{mafic}             \href{https://en.wikipedia.org/wiki/Mafic}{Mafic}
+    \bibitem{hydrated_silica}   \href{https://en.wikipedia.org/wiki/Hydrated_silica}{Hydrated Silica}
+    \bibitem{quartz}            \href{https://en.wikipedia.org/wiki/Quartz}{Quartz}
+    \bibitem{serpentinization}  \href{https://en.wikipedia.org/wiki/Serpentinization}{Serpentinization}
+    \bibitem{schikorr_reaction} \href{https://en.wikipedia.org/wiki/Schikorr_reaction}{Schikorr reaction}
+    \bibitem{iron_ii_iii_oxide} \href{https://en.wikipedia.org/wiki/Iron(II,III)_oxide}{Iron (II,III) oxide}
+\end{thebibliography}
+
+\end{document}
+
