@@ -44,7 +44,7 @@ The second part is achieved with Rubisco as a catalyst.
 
 \section{Chlorophyll}
 
-Chlorophyll acts like a catalyst; it absorns photons at around 680 nm.
+Chlorophyll acts like a catalyst; it absorbs photons at around 680 nm.
 
 Some possible reactions
 \[
@@ -61,11 +61,17 @@ and
 The last equation above likely came first in evolution. It requires less energy (about 2/3) to split $\H_2\S$
 than to split $\H_2\O$.
 
-So early evolution used Hydrogen Sulfide $\H_2\S$ as the source of Hydrogen, and only later did
-cells evolve the capacity to split Water $\H_2\O$. The latter is abundant and therefore presented a huge advantage.
+So early evolution used Hydrogen Sulfide $\H_2\S$ as the source of Hydrogen, and only later did cells evolve the
+capacity to split Water $\H_2\O$. The latter is abundant and therefore presented a huge advantage. Using Hydrogen
+Sulfide is characteristic of Chemotrophs\ \cite{lithoautotroph}.
 
-However, splitting of water (and in general any harvesting of photons) is very powerful machinery. The photons
-can potentially split anything.
+The equations above are examples of Oxygenic Photosynthesis. There is also Anoxygenic Photosynthesis. The latter
+is much older\ \cite{anoxygenicphotosynthesis} and\ \cite{purplesulfurbacteria}.
+
+Bacteriorhodopsin has a $\Fe$ or $\Mg$ core.
+
+However, splitting of water (and in general any harvesting of photons) is very powerful machinery. The photons can
+potentially split anything.
 
 Ferri-cyanide $\Fe{(\C\N)}_6^{3-}$ can be used instead of $\C\O_2$.
 
@@ -74,29 +80,81 @@ Ferri-cyanide $\Fe{(\C\N)}_6^{3-}$ can be used instead of $\C\O_2$.
     \text{Chlorophyll} + \text{energy} \rightarrow \text{Chlorophyll}^+ + e^-
 \]
 
+Reaction Center Complex is used in the Electron Transport Chain.
+
 The electron $e^-$ moves from compounds with low redox potential to high potential. During this process
 the excited electron facilitates the generation of ADP.\@
 
 The excited Chlorophyll reacts with (i.e.\ steals electrons from) water.
-In other words, the water molecule $\H_2\O$ acts as an electron donor.
+In other words, the water molecule $\H_2\O$ or rather the $\H_2$ acts as an electron donor.
 
 This is known as the Z-scheme.
 
-\section{Rubisco}
+\section{Catalase}
+An enzyme (containing either Iron or Manganese at its core) that breaks down Hydrogen Peroxide into Water and Oxygen.
 \[
-    \H^+ + e^- \rightarrow \H {}
+    2\,\H_2\O_2 \rightarrow 2\,\H_2\O + \O_2
+\]
+
+This uses Hydrogen Peroxide as an electron donor instead of water and Sulfur as an electron acceptor instead of
+Oxygen\ \cite{earlyanaerobicmetabolisms}.
+
+In the early Earth, the water was full of Iron and no Oxygen. There was some amount of Hydrogen Peroxide and that lead
+to generation of radicals via the two Fenton reactions (where Iron ions act as a catalyst):
+\[
+    \Fe^{2+} + \H_2\O_2 \rightarrow \Fe^{3+} + \H\O^{*} + \O\H^-
+\]
+and
+\[
+    \Fe^{3+} + \H_2\O_2 \rightarrow \Fe^{2+} + \H\O\O^{*} + \H^+
+\]
+They convert Hydrogen Perodixe $\H_2\O_2$ into a hydroxyl radical $\H\O^*$ and a hydroperoxyl radical
+$\H\O\O^*$.
+
+Hydrogen Peroxide is generated in (among other places) the atmosphere when UV light reacts with water:
+\[
+    \H_2\O + \text{photon} \rightarrow \H\O^* + e^- + \H^+
+\]
+and
+\[
+    2\,\H\O^* \rightarrow \H_2\O_2
+\]
+
+Once Oxygen became abundant, the Iron got oxidized and precipitated out of the oceans, hence reducing the abundance of
+free radicals.
+
+Two Catalase molecules can combine into one single Oxygen-evolving complex\ \cite{oxygenevolvingcomplex}.
+
+
+\section{Oxygenic photosynthesis}
+This evolved due to the selective pressure from lack of Iron and Hydrogen Sulfides and other minerals,
+as well as ultraviolet radiation causing production of Hydrogen Peroxide.
+
+And it required already existing Catalase as a necessary precursor.
+
+Chlorophyll:\ \cite{lightdependentreactions}
+The overall reaction is as follows:
+\[
+    2\,\H_2\O + 8 \, \text{photons} \rightarrow 4\,e^- + 4\,\H^+ + \O_2,
+\]
+but it proceeds in a number of part reactions (one for each photon).
+In other words, water is stripped of its electrons (four in total) one by one, in order to produce a single Oxygen
+molecule.
+It takes place in the Oxygen-evolving complex\ \cite{oxygenevolvingcomplex} and\ \cite{catalase}.
+
+Oxygen (even in molecular form) are very reactive and tend to steal electrons to form Super Oxide Radicals.
+\[
+    2\,\H^+ + 2\,e^- + \C\O_2 \rightarrow \C\H_2\O_2.
 \]
 
 \begin{thebibliography}{9}
-    \bibitem{nist}              \href{https://webbook.nist.gov/}{NIST Chemistry WebBook}
-    \bibitem{olivine}           \href{https://en.wikipedia.org/wiki/Olivine}{Olivine}
-    \bibitem{orthosilicate}     \href{https://en.wikipedia.org/wiki/Orthosilicate}{Orthosilicate}
-    \bibitem{mafic}             \href{https://en.wikipedia.org/wiki/Mafic}{Mafic}
-    \bibitem{hydrated_silica}   \href{https://en.wikipedia.org/wiki/Hydrated_silica}{Hydrated Silica}
-    \bibitem{quartz}            \href{https://en.wikipedia.org/wiki/Quartz}{Quartz}
-    \bibitem{serpentinization}  \href{https://en.wikipedia.org/wiki/Serpentinization}{Serpentinization}
-    \bibitem{schikorr_reaction} \href{https://en.wikipedia.org/wiki/Schikorr_reaction}{Schikorr reaction}
-    \bibitem{iron_ii_iii_oxide} \href{https://en.wikipedia.org/wiki/Iron(II,III)_oxide}{Iron (II,III) oxide}
+    \bibitem{lithoautotroph}            \href{https://en.wikipedia.org/wiki/Lithoautotroph}{Lithoautotroph}
+    \bibitem{anoxygenicphotosynthesis}  \href{https://en.wikipedia.org/wiki/Anoxygenic_photosynthesis}{Anoxygenic photosynthesis}
+    \bibitem{lightdependentreactions}   \href{https://en.wikipedia.org/wiki/Light-dependent_reactions}{Light-dependent reactions}
+    \bibitem{purplesulfurbacteria}      \href{https://en.wikipedia.org/wiki/Purple_sulfur_bacteria}{Purple sulfur bacteria}
+    \bibitem{oxygenevolvingcomplex}     \href{https://en.wikipedia.org/wiki/Oxygen-evolving_complex}{Oxygen-evolving complex}
+    \bibitem{catalase}                  \href{https://en.wikipedia.org/wiki/Catalase}{Catalase}
+    \bibitem{earlyanaerobicmetabolisms} \href{https://pmc.ncbi.nlm.nih.gov/articles/PMC1664682/}{Early anaerobic metabolisms}
 \end{thebibliography}
 
 \end{document}
